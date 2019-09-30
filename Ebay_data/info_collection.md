@@ -12,6 +12,6 @@
 |8|ebay的api的开发技术笔记原文|https://www.cnblogs.com/dwuge/p/5341851.html|
 |9|Ebay SDK|https://developer.ebay.com/tools/sdks|
 |10|Ebay Python SDK|https://github.com/timotheus/ebaysdk-python|
-|11|----|-----|
+|11|eBay获取oken授权|https://blog.csdn.net/zhangfeng1133/article/details/80791295|
 |12|----|-----|
 |13|----|-----|
