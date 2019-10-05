@@ -151,6 +151,85 @@ Folder Structure:
 
 
 
+Info Backup: 
+For buildings and industrials data, there are two classifications: commercial buildings and industrials. These data are necessary for this project because the goal of this project is to obtain a detailed view of how energy consumption occurs in different Industry Classification System of North America. There are 18 attributes in both commercial buildings data and industrials data:
+1.	city: the city name of USA
+2.	state_abbr: the state of USA 
+3.	zip: the zip of USA
+4.	type: the type of user – commercial building or industrial
+5.	town: Small towns under the city
+6.	naics_3: the code of North American Industry Classification System – Third Class
+7.	electricity_users: Different kinds of business under NAICS 3 who use electricity
+8.	number_of_electricity_establishments: the number of business who uses electricity
+9.	electricity_use: the total used amount of electricity
+10.	rank_of_electricity_use: the rank of use-electricity amount in this city
+11.	electricity_use_per_establishment: the average electricity amount 
+12.	rank_of_electricity_use_per_establishment: the rank of average electricity amount in this state
+13.	natural_gas_users: Different kinds of business under NAICS 3 who use natural gas
+14.	number_of_natural_gas_establishments: the number of business who uses natural gas
+15.	natural_gas_use: the total used amount of natural gas
+16.	rank_of_natural_gas_use: the rank of use-natural-gas amount in this city
+17.	natural_gas_use_per_establishment: the average natural gas amount
+18.	rank_of_natural_gas_use_per_establishment: the rank of average natural gas amount in this state
+Therefore, the data could produce many statistics and locate some cities where energy consumption is higher than others. There might be ought to strengthen measurements of saving energy. Besides, the data can help people to predict the potential cities with high energy consumption and take measures to save energy. To predict, there should be more historic data to collect in different years to analyze the change tendency.
+
+Collecting New Data:
+The original data of commercial buildings and industrials are stored in the data_in_json folder. The files all contain original JSON data from data.gov. The JSON files are processed to CSV files in the data_in_csv folder. The files industrial.csv and commercial_building.csv contain main data of this analysis project, and other data will support the project with the necessary operation.
+
+Data Cleaning
+The data also did the second procession and cleaning with solving missing values, converting correct formation, removing unclear values, and so on. The cleaned data are located in the folder – cleaned_data_csv. The README.txt is provided to show the details of the structure of the data location and folder branches. Please check README.txt to get more details about folder structure and file locations.
+
+
+
+Data Cleanliness
+The fractions of missing values in cleaned data are: 
+Commercial building:
+city                                         0.000000
+state_abbr                                   0.000000
+zip                                          0.000000
+type                                         0.000000
+town                                         0.000000
+naics_3                                      0.000000
+electricity_users                            0.000000
+number_of_electricity_establishments         0.000000
+electricity_use                              0.000000
+rank_of_electricity_use                      0.000000
+electricity_use_per_establishment            0.001052
+rank_of_electricity_use_per_establishment    0.000000
+natural_gas_users                            0.000000
+number_of_natural_gas_establishments         0.000000
+natural_gas_use                              0.118833
+rank_of_natural_gas_use                      0.000000
+natural_gas_use_per_establishment            0.118952
+rank_of_natural_gas_use_per_establishment    0.000000
+
+Industrial:
+city                                         0.000000                                                                   
+state_abbr                                   0.000000                                                                   
+zip                                          0.000000                                                                   
+type                                         0.000000                                                                   
+town                                         0.000000                                                                   
+naics_3                                      0.000000                                                                   
+electricity_users                            0.000000                                                                   
+number_of_electricity_establishments         0.000000                                                                   
+electricity_use                              0.000000                                                                   
+rank_of_electricity_use                      0.000000                                                                   
+electricity_use_per_establishment            0.004456                                                                   
+rank_of_electricity_use_per_establishment    0.000000                                                                   
+natural_gas_users                            0.000000                                                                   
+number_of_natural_gas_establishments         0.000000                                                                   
+natural_gas_use                              0.000000                                                                   
+rank_of_natural_gas_use                      0.000000                                                                   
+natural_gas_use_per_establishment            0.003121                                                                   
+rank_of_natural_gas_use_per_establishment    0.000000
+
+Since some businesses only use either natural gas or electricity, their data of the corresponding attribute will be missing. The missing values are allowed. Therefore, the commercial buildings and industrials data are enough cleaned for analysis in this project. For other data, they are supporting the project when it analyzes the commercial buildings and industrials data. They will be processed when the project needs them. They are extra more data.
+
+
+
+
+
+
 
 
 
