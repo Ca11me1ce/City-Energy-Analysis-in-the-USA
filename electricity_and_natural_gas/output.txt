@@ -1,0 +1,225 @@
+The fractions of missing values are: 
+ 
+residential:
+ zip                       0.000000
+city                      0.000000
+housing_units             0.000148
+total_pop                 0.000162
+elec_1kdollars            0.000148
+elec_mwh                  0.000148
+gas_1kdollars             0.000148
+gas_mcf                   0.000148
+elec_1kdollars_bin_min    0.000000
+elec_1kdollars_bin_max    0.000000
+elec_mwh_bin_min          0.000000
+elec_mwh_bin_max          0.000000
+gas_1kdollars_bin_min     0.000000
+gas_1kdollars_bin_max     0.000000
+gas_mcf_bin_min           0.000000
+gas_mcf_bin_max           0.000000
+elec_lb_ghg               0.000148
+elec_min_lb_ghg           0.000000
+elec_max_lb_ghg           0.000000
+gas_lb_ghg                0.000148
+gas_min_lb_ghg            0.000000
+gas_max_lb_ghg            0.000000
+dtype: float64 
+
+commercial:
+ zip                       0.000000
+city                      0.000000
+num_establishments        0.018204
+elec_1kdollars            0.018204
+elec_mwh                  0.018204
+gas_1kdollars             0.018204
+gas_mcf                   0.018204
+elec_1kdollars_bin_min    0.000000
+elec_1kdollars_bin_max    0.000000
+elec_mwh_bin_min          0.000000
+elec_mwh_bin_max          0.000000
+gas_1kdollars_bin_min     0.000000
+gas_1kdollars_bin_max     0.000000
+gas_mcf_bin_min           0.000000
+gas_mcf_bin_max           0.000000
+elec_lb_ghg               0.018204
+elec_min_lb_ghg           0.000000
+elec_max_lb_ghg           0.000000
+gas_lb_ghg                0.018204
+gas_min_lb_ghg            0.000000
+gas_max_lb_ghg            0.000000
+dtype: float64 
+
+industrial:
+ zip                       0.000000
+city                      0.000000
+num_establishments        0.049342
+elec_1kdollars            0.049342
+elec_mwh                  0.049342
+gas_1kdollars             0.050154
+gas_mcf                   0.049342
+elec_1kdollars_bin_min    0.000000
+elec_1kdollars_bin_max    0.000000
+elec_mwh_bin_min          0.000000
+elec_mwh_bin_max          0.000000
+gas_1kdollars_bin_min     0.000000
+gas_1kdollars_bin_max     0.000000
+gas_mcf_bin_min           0.000000
+gas_mcf_bin_max           0.000000
+elec_lb_ghg               0.049342
+elec_min_lb_ghg           0.000000
+elec_max_lb_ghg           0.000000
+gas_lb_ghg                0.049342
+gas_min_lb_ghg            0.000000
+gas_max_lb_ghg            0.000000
+dtype: float64 
+
+merged data:
+ zip                              0.000000
+city                             0.000000
+housing_units                    0.000148
+total_pop                        0.000162
+commercial_num_establishments    0.018204
+industrial_num_establishments    0.049342
+residential_elec_1kdollars       0.000148
+commercial_elec_1kdollars        0.018204
+industrial_elec_1kdollars        0.049342
+residential_elec_mwh             0.000148
+commercial_elec_mwh              0.018204
+industrial_elec_mwh              0.049342
+residential_gas_1kdollars        0.000148
+commercial_gas_1kdollars         0.018204
+industrial_gas_1kdollars         0.050154
+residential_gas_mcf              0.000148
+commercial_gas_mcf               0.018204
+industrial_gas_mcf               0.049342
+residential_elec_lb_ghg          0.000148
+commercial_elec_lb_ghg           0.018204
+industrial_elec_lb_ghg           0.049342
+residential_gas_lb_ghg           0.000148
+commercial_gas_lb_ghg            0.018204
+industrial_gas_lb_ghg            0.049342
+dtype: float64
+
+The fractions of incorrect values are:
+  residential:
+ [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0] 
+commercial:
+ [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0] 
+industrial:
+ [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0] 
+merged data:
+ [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+
+After processed.
+
+The fractions of missing values are: 
+ 
+residential:
+ zip                       0.0
+city                      0.0
+housing_units             0.0
+total_pop                 0.0
+elec_1kdollars            0.0
+elec_mwh                  0.0
+gas_1kdollars             0.0
+gas_mcf                   0.0
+elec_1kdollars_bin_min    0.0
+elec_1kdollars_bin_max    0.0
+elec_mwh_bin_min          0.0
+elec_mwh_bin_max          0.0
+gas_1kdollars_bin_min     0.0
+gas_1kdollars_bin_max     0.0
+gas_mcf_bin_min           0.0
+gas_mcf_bin_max           0.0
+elec_lb_ghg               0.0
+elec_min_lb_ghg           0.0
+elec_max_lb_ghg           0.0
+gas_lb_ghg                0.0
+gas_min_lb_ghg            0.0
+gas_max_lb_ghg            0.0
+dtype: float64 
+
+commercial:
+ zip                       0.0
+city                      0.0
+num_establishments        0.0
+elec_1kdollars            0.0
+elec_mwh                  0.0
+gas_1kdollars             0.0
+gas_mcf                   0.0
+elec_1kdollars_bin_min    0.0
+elec_1kdollars_bin_max    0.0
+elec_mwh_bin_min          0.0
+elec_mwh_bin_max          0.0
+gas_1kdollars_bin_min     0.0
+gas_1kdollars_bin_max     0.0
+gas_mcf_bin_min           0.0
+gas_mcf_bin_max           0.0
+elec_lb_ghg               0.0
+elec_min_lb_ghg           0.0
+elec_max_lb_ghg           0.0
+gas_lb_ghg                0.0
+gas_min_lb_ghg            0.0
+gas_max_lb_ghg            0.0
+dtype: float64 
+
+industrial:
+ zip                       0.0
+city                      0.0
+num_establishments        0.0
+elec_1kdollars            0.0
+elec_mwh                  0.0
+gas_1kdollars             0.0
+gas_mcf                   0.0
+elec_1kdollars_bin_min    0.0
+elec_1kdollars_bin_max    0.0
+elec_mwh_bin_min          0.0
+elec_mwh_bin_max          0.0
+gas_1kdollars_bin_min     0.0
+gas_1kdollars_bin_max     0.0
+gas_mcf_bin_min           0.0
+gas_mcf_bin_max           0.0
+elec_lb_ghg               0.0
+elec_min_lb_ghg           0.0
+elec_max_lb_ghg           0.0
+gas_lb_ghg                0.0
+gas_min_lb_ghg            0.0
+gas_max_lb_ghg            0.0
+dtype: float64 
+
+merged data:
+ zip                              0.0
+city                             0.0
+housing_units                    0.0
+total_pop                        0.0
+commercial_num_establishments    0.0
+industrial_num_establishments    0.0
+residential_elec_1kdollars       0.0
+commercial_elec_1kdollars        0.0
+industrial_elec_1kdollars        0.0
+residential_elec_mwh             0.0
+commercial_elec_mwh              0.0
+industrial_elec_mwh              0.0
+residential_gas_1kdollars        0.0
+commercial_gas_1kdollars         0.0
+industrial_gas_1kdollars         0.0
+residential_gas_mcf              0.0
+commercial_gas_mcf               0.0
+industrial_gas_mcf               0.0
+residential_elec_lb_ghg          0.0
+commercial_elec_lb_ghg           0.0
+industrial_elec_lb_ghg           0.0
+residential_gas_lb_ghg           0.0
+commercial_gas_lb_ghg            0.0
+industrial_gas_lb_ghg            0.0
+dtype: float64
+
+The fractions of incorrect values are:
+  residential:
+ [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0] 
+commercial:
+ [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0] 
+industrial:
+ [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0] 
+merged data:
+ [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
