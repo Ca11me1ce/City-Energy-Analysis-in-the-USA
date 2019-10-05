@@ -1,4 +1,4 @@
-This is the README.txt for buildings_and_industry follder.
+This is the README.txt for buildings_and_industry folder structure.
 
 Folder Structure:
 ../buildings_and_industry/
