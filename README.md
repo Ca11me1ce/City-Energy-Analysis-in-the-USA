@@ -3,6 +3,7 @@
 This is the repo for GU COSC587 whole-semester project.
 
 ## building_and_industry
+The main data contains commercial gas and electricity consumption in commercial buildings and industries related to the cities in the USA and their ranks of consumption in the cities or in the state. It also contains types of businesses and industries in current society. The minor data contains some information about these commercial buildings and industries. 
 
 ## electricity_and_natural_gas
 
