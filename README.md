@@ -1,6 +1,6 @@
 # Georgetown-University-COCS587-Data-Analytics-Project
 
-This is the repository for GU COSC587 whole-semester project.
+This is the repository for GU COSC587 whole-semester project.<br>
 Group Members: Dandan Wang, Jiexin Kong, Yang Chen
 
 ## building_and_industry
