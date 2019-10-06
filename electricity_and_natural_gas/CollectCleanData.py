@@ -1,7 +1,7 @@
 ###################
 # Author: Dandan Wang
 # NetID: dw862
-# Function: Collect Electricity and Natural Gas Data.
+# Function: Collect and clean electricity and natural gas data.
 # #################
 
 import requests
