@@ -1,6 +1,9 @@
 The first part is the README.txt for buildings_and_industry folder structure.
 The second part is the details of the data in this folder.
+The main data contains approximately 1.8 million pieces of information.
+The minor data contains more than 2 million pieces of information.
 
+1.
 Folder Structure:
 ../buildings_and_industry/
 	/clean_data_py/
@@ -148,9 +151,6 @@ Folder Structure:
 		/process_industrial_data.py
 		/process_lmi_housing_units_data.py
 		/process_small_building_pv.py
-
-
-
 
 2.
 For buildings and industrials data, there are two classifications: commercial buildings and industrials. These data are necessary for this project because the goal of this project is to obtain a detailed view of how energy consumption occurs in different Industry Classification System of North America. There are 18 attributes in both commercial buildings data and industrials data:
