@@ -11,12 +11,13 @@ The main data contains commercial gas and electricity consumption in commercial 
 
 There are electricity and natural gas expenditure data in this folder. The expenditure data is divided into 3 classifications - residential expenditures, commercial expenditures, and industrial expenditures.
 
-## general
+## co2_emission
+There are carbon dioxide emission data from 1980 to 2016 in this folder. 
 
 ## population_data
 
 The raw data contains information about all cities in the United States. Because it is difficult to obtain industrial energy information from cities outside the 50 states of the United States, it has been processed, leaving only about 30,000 cities in the United States. City information is the basis for our access to energy information.
 
-## transportation
-
+## energy usage and expenditure
+There are electicial and natural gas usage and expenditure data in this folder. Each has four parts: industrial, commercial, residential and city.
 
