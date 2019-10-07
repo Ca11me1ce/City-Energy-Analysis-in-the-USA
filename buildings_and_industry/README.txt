@@ -154,16 +154,16 @@ Folder Structure:
 
 2.
 For buildings and industrials data, there are two classifications: commercial buildings and industrials. These data are necessary for this project because the goal of this project is to obtain a detailed view of how energy consumption occurs in different Industry Classification System of North America. There are 18 attributes in both commercial buildings data and industrials data:
-1.	city: the city name of USA
+1.	city: the city name of the USA
 2.	state_abbr: the state of USA 
 3.	zip: the zip of USA
 4.	type: the type of user – commercial building or industrial
 5.	town: Small towns under the city
-6.	naics_3: the code of North American Industry Classification System – Third Class
+6.	naics_3: the code of the North American Industry Classification System – Third Class
 7.	electricity_users: Different kinds of business under NAICS 3 who use electricity
 8.	number_of_electricity_establishments: the number of business who uses electricity
 9.	electricity_use: the total used amount of electricity
-10.	rank_of_electricity_use: the rank of use-electricity amount in this city
+10.	rank_of_electricity_use: the rank of the use-electricity amount in this city
 11.	electricity_use_per_establishment: the average electricity amount 
 12.	rank_of_electricity_use_per_establishment: the rank of average electricity amount in this state
 13.	natural_gas_users: Different kinds of business under NAICS 3 who use natural gas
