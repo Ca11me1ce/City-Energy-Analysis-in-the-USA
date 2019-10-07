@@ -55,10 +55,6 @@ The cleaned data about industrial electricity and natural gas consumptions are s
 
 The cleaned merged attributes about electricity and natural gas consumptions are stored in this file.
 
-# project1-electricity_and_natrual_gas.pdf
-
-The answers of project assignment 1, including how to conducted collected data, data issues in the collected data, how to collect data, how to measure data cleanliness and the process of cleaning data.
-
 ## Meanings of each column
 
 * [housing_units](https://www.census.gov/housing/hvs/definitions.pdf)
@@ -88,7 +84,7 @@ The answers of project assignment 1, including how to conducted collected data, 
 
 * gas_mcf
 
-    The usage of natural gas, and the unit is 1 thousand cube feet.
+    The usage of natural gas, and the unit is 1 thousand cubic feet.
 
 * elec_1kdollars_bin_min
 
@@ -136,7 +132,7 @@ The answers of project assignment 1, including how to conducted collected data, 
 
 * gas_lb_ghg
 
-    How much greenhouse gas is produced per thousand cube feet gas?
+    How much greenhouse gas is produced per thousand cubic feet gas?
 
 * gas_min_lb_ghg
 
