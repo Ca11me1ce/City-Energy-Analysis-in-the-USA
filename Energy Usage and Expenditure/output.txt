@@ -1,0 +1,208 @@
+For commercial.csv, find the fraction of missing values in each column:
+zip: 0.0
+city: 0.0
+commercial_electric_use_min: 0.0
+commercial_electric_use_avg: 0.0
+commercial_electric_use_max: 0.0
+commercial_electric_expenditure_min: 0.0
+commercial_electric_expenditure_avg: 0.0
+commercial_electric_expenditure_max: 0.0
+commercial_gas_use_min: 0.0
+commercial_gas_use_avg: 0.0
+commercial_gas_use_max: 0.0
+commercial_gas_expenditure_min: 0.0
+commercial_gas_expenditure_avg: 0.0
+commercial_gas_expenditure_max: 0.0
+For commercial.csv, find the fraction of invalid values in each column:
+commercial_electric_use_min: 0.0
+commercial_electric_use_avg: 0.0
+commercial_electric_use_max: 0.0
+commercial_electric_expenditure_min: 0.0
+commercial_electric_expenditure_avg: 0.0
+commercial_electric_expenditure_max: 0.0
+commercial_gas_use_min: 0.0
+commercial_gas_use_avg: 0.0
+commercial_gas_use_max: 0.0
+commercial_gas_expenditure_min: 0.0
+commercial_gas_expenditure_avg: 0.0
+commercial_gas_expenditure_max: 0.0
+
+For industrial.csv, find the fraction of missing values in each column:
+zip: 0.0
+city: 0.0
+industrial_electric_use_min: 0.0
+industrial_electric_use_avg: 0.0
+industrial_electric_use_max: 0.0
+industrial_electric_expenditure_min: 0.0
+industrial_electric_expenditure_avg: 0.0
+industrial_electric_expenditure_max: 0.0
+industrial_gas_use_min: 0.0
+industrial_gas_use_avg: 0.0
+industrial_gas_use_max: 0.0
+industrial_gas_expenditure_min: 0.0
+industrial_gas_expenditure_avg: 0.0
+industrial_gas_expenditure_max: 0.0
+For industrial.csv, find the fraction of invalid values in each column:
+industrial_electric_use_min: 0.0
+industrial_electric_use_avg: 0.0
+industrial_electric_use_max: 0.0
+industrial_electric_expenditure_min: 0.0
+industrial_electric_expenditure_avg: 0.0
+industrial_electric_expenditure_max: 0.0
+industrial_gas_use_min: 0.0
+industrial_gas_use_avg: 0.0
+industrial_gas_use_max: 0.0
+industrial_gas_expenditure_min: 0.0
+industrial_gas_expenditure_avg: 0.0
+industrial_gas_expenditure_max: 0.0
+
+For residential.csv, find the fraction of missing values in each column:
+zip: 0.0
+city: 0.0
+residential_electric_use_min: 0.0
+residential_electric_use_avg: 0.0
+residential_electric_use_max: 0.0
+residential_electric_expenditure_min: 0.0
+residential_electric_expenditure_avg: 0.0
+residential_electric_expenditure_max: 0.0
+residential_gas_use_min: 0.0
+residential_gas_use_avg: 0.0
+residential_gas_use_max: 0.0
+residential_gas_expenditure_min: 0.0
+residential_gas_expenditure_avg: 0.0
+residential_gas_expenditure_max: 0.0
+For residential.csv, find the fraction of invalid values in each column:
+residential_electric_use_min: 0.0
+residential_electric_use_avg: 0.0
+residential_electric_use_max: 0.0
+residential_electric_expenditure_min: 0.0
+residential_electric_expenditure_avg: 0.0
+residential_electric_expenditure_max: 0.0
+residential_gas_use_min: 0.0
+residential_gas_use_avg: 0.0
+residential_gas_use_max: 0.0
+residential_gas_expenditure_min: 0.0
+residential_gas_expenditure_avg: 0.0
+residential_gas_expenditure_max: 0.0
+
+For city.csv, find the fraction of missing values in each column:
+zip: 0.0
+city: 0.0
+city_fuel_use_diesel_min: 0.0
+city_fuel_use_diesel_avg: 0.0
+city_fuel_use_diesel_max: 0.0
+city_fuel_use_gas_min: 0.0
+city_fuel_use_gas_avg: 0.0
+city_fuel_use_gas_max: 0.0
+For city.csv, find the fraction of invalid values in each column:
+city_fuel_use_diesel_min: 0.0
+city_fuel_use_diesel_avg: 0.0
+city_fuel_use_diesel_max: 0.0
+city_fuel_use_gas_min: 0.0
+city_fuel_use_gas_avg: 0.0
+city_fuel_use_gas_max: 0.0
+
+For commercial.csv, find the fraction of missing values in each column:
+zip: 0.0
+city: 0.0
+commercial_electric_use_min: 0.0
+commercial_electric_use_avg: 0.0
+commercial_electric_use_max: 0.0
+commercial_electric_expenditure_min: 0.0
+commercial_electric_expenditure_avg: 0.0
+commercial_electric_expenditure_max: 0.0
+commercial_gas_use_min: 0.0
+commercial_gas_use_avg: 0.0
+commercial_gas_use_max: 0.0
+commercial_gas_expenditure_min: 0.0
+commercial_gas_expenditure_avg: 0.0
+commercial_gas_expenditure_max: 0.0
+For commercial.csv, find the fraction of invalid values in each column:
+commercial_electric_use_min: 0.0
+commercial_electric_use_avg: 0.0
+commercial_electric_use_max: 0.0
+commercial_electric_expenditure_min: 0.0
+commercial_electric_expenditure_avg: 0.0
+commercial_electric_expenditure_max: 0.0
+commercial_gas_use_min: 0.0
+commercial_gas_use_avg: 0.0
+commercial_gas_use_max: 0.0
+commercial_gas_expenditure_min: 0.0
+commercial_gas_expenditure_avg: 0.0
+commercial_gas_expenditure_max: 0.0
+
+For industrial.csv, find the fraction of missing values in each column:
+zip: 0.0
+city: 0.0
+industrial_electric_use_min: 0.0
+industrial_electric_use_avg: 0.0
+industrial_electric_use_max: 0.0
+industrial_electric_expenditure_min: 0.0
+industrial_electric_expenditure_avg: 0.0
+industrial_electric_expenditure_max: 0.0
+industrial_gas_use_min: 0.0
+industrial_gas_use_avg: 0.0
+industrial_gas_use_max: 0.0
+industrial_gas_expenditure_min: 0.0
+industrial_gas_expenditure_avg: 0.0
+industrial_gas_expenditure_max: 0.0
+For industrial.csv, find the fraction of invalid values in each column:
+industrial_electric_use_min: 0.0
+industrial_electric_use_avg: 0.0
+industrial_electric_use_max: 0.0
+industrial_electric_expenditure_min: 0.0
+industrial_electric_expenditure_avg: 0.0
+industrial_electric_expenditure_max: 0.0
+industrial_gas_use_min: 0.0
+industrial_gas_use_avg: 0.0
+industrial_gas_use_max: 0.0
+industrial_gas_expenditure_min: 0.0
+industrial_gas_expenditure_avg: 0.0
+industrial_gas_expenditure_max: 0.0
+
+For residential.csv, find the fraction of missing values in each column:
+zip: 0.0
+city: 0.0
+residential_electric_use_min: 0.0
+residential_electric_use_avg: 0.0
+residential_electric_use_max: 0.0
+residential_electric_expenditure_min: 0.0
+residential_electric_expenditure_avg: 0.0
+residential_electric_expenditure_max: 0.0
+residential_gas_use_min: 0.0
+residential_gas_use_avg: 0.0
+residential_gas_use_max: 0.0
+residential_gas_expenditure_min: 0.0
+residential_gas_expenditure_avg: 0.0
+residential_gas_expenditure_max: 0.0
+For residential.csv, find the fraction of invalid values in each column:
+residential_electric_use_min: 0.0
+residential_electric_use_avg: 0.0
+residential_electric_use_max: 0.0
+residential_electric_expenditure_min: 0.0
+residential_electric_expenditure_avg: 0.0
+residential_electric_expenditure_max: 0.0
+residential_gas_use_min: 0.0
+residential_gas_use_avg: 0.0
+residential_gas_use_max: 0.0
+residential_gas_expenditure_min: 0.0
+residential_gas_expenditure_avg: 0.0
+residential_gas_expenditure_max: 0.0
+
+For city.csv, find the fraction of missing values in each column:
+zip: 0.0
+city: 0.0
+city_fuel_use_diesel_min: 0.0
+city_fuel_use_diesel_avg: 0.0
+city_fuel_use_diesel_max: 0.0
+city_fuel_use_gas_min: 0.0
+city_fuel_use_gas_avg: 0.0
+city_fuel_use_gas_max: 0.0
+For city.csv, find the fraction of invalid values in each column:
+city_fuel_use_diesel_min: 0.0
+city_fuel_use_diesel_avg: 0.0
+city_fuel_use_diesel_max: 0.0
+city_fuel_use_gas_min: 0.0
+city_fuel_use_gas_avg: 0.0
+city_fuel_use_gas_max: 0.0
+

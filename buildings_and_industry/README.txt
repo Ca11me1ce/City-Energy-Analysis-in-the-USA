@@ -1,5 +1,9 @@
-This is the README.txt for buildings_and_industry folder structure.
+The first part is the README.txt for buildings_and_industry folder structure.
+The second part is the details of the data in this folder.
+The main data contains approximately 1.8 million pieces of information.
+The minor data contains more than 2 million pieces of information.
 
+1.
 Folder Structure:
 ../buildings_and_industry/
 	/clean_data_py/
@@ -148,21 +152,18 @@ Folder Structure:
 		/process_lmi_housing_units_data.py
 		/process_small_building_pv.py
 
-
-
-
-Info Backup: 
+2.
 For buildings and industrials data, there are two classifications: commercial buildings and industrials. These data are necessary for this project because the goal of this project is to obtain a detailed view of how energy consumption occurs in different Industry Classification System of North America. There are 18 attributes in both commercial buildings data and industrials data:
-1.	city: the city name of USA
+1.	city: the city name of the USA
 2.	state_abbr: the state of USA 
 3.	zip: the zip of USA
 4.	type: the type of user – commercial building or industrial
 5.	town: Small towns under the city
-6.	naics_3: the code of North American Industry Classification System – Third Class
+6.	naics_3: the code of the North American Industry Classification System – Third Class
 7.	electricity_users: Different kinds of business under NAICS 3 who use electricity
 8.	number_of_electricity_establishments: the number of business who uses electricity
 9.	electricity_use: the total used amount of electricity
-10.	rank_of_electricity_use: the rank of use-electricity amount in this city
+10.	rank_of_electricity_use: the rank of the use-electricity amount in this city
 11.	electricity_use_per_establishment: the average electricity amount 
 12.	rank_of_electricity_use_per_establishment: the rank of average electricity amount in this state
 13.	natural_gas_users: Different kinds of business under NAICS 3 who use natural gas
@@ -178,7 +179,6 @@ The original data of commercial buildings and industrials are stored in the data
 
 Data Cleaning
 The data also did the second procession and cleaning with solving missing values, converting correct formation, removing unclear values, and so on. The cleaned data are located in the folder – cleaned_data_csv. The README.txt is provided to show the details of the structure of the data location and folder branches. Please check README.txt to get more details about folder structure and file locations.
-
 
 
 Data Cleanliness
@@ -224,22 +224,3 @@ natural_gas_use_per_establishment            0.003121
 rank_of_natural_gas_use_per_establishment    0.000000
 
 Since some businesses only use either natural gas or electricity, their data of the corresponding attribute will be missing. The missing values are allowed. Therefore, the commercial buildings and industrials data are enough cleaned for analysis in this project. For other data, they are supporting the project when it analyzes the commercial buildings and industrials data. They will be processed when the project needs them. They are extra more data.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
