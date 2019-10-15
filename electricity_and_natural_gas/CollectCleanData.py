@@ -265,7 +265,7 @@ def cleanliness(df_residential, df_commercial, df_industrial, df_merged):
 
 if __name__ == "__main__":
     # Collect data.
-    # attrs = collectData()
+    attrs = collectData()
 
     # Read Data into DataFrames
     df_residential = readData("residential.csv")
@@ -277,10 +277,10 @@ if __name__ == "__main__":
     cleanliness(df_residential, df_commercial, df_industrial, df_merged)
 
     # Clean Data.
-    #cleanData(df_residential, ['housing_units', 'total_pop'] + public_attrs, "cleaned_residential.csv")
-    #cleanData(df_commercial, ['num_establishments'] + public_attrs, "cleaned_commercial.csv")
-    #cleanData(df_industrial, ['num_establishments'] + public_attrs, "cleaned_industrial.csv")
-    #cleanData(df_merged, merged_attrs, "cleaned_electricity_and_natural_gas.csv")
+    cleanData(df_residential, ['housing_units', 'total_pop'] + public_attrs, "cleaned_residential.csv")
+    cleanData(df_commercial, ['num_establishments'] + public_attrs, "cleaned_commercial.csv")
+    cleanData(df_industrial, ['num_establishments'] + public_attrs, "cleaned_industrial.csv")
+    cleanData(df_merged, merged_attrs, "cleaned_electricity_and_natural_gas.csv")
 
     # Detect the processed data.
     # Read the processed data into dataframe.
