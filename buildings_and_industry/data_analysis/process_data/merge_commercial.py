@@ -31,12 +31,13 @@ if __name__ == "__main__":
 
     # Process and remove duplicate columns
     df2=df2.drop(df2.columns[0], axis=1)
+    df2['state_abbr']=df2['state_id']
     df2=df2.drop(['state_id'], axis=1)
     print(df1.info())
     print(df2.info())
 
     # Left join two dataframes
-    df=pd.merge(df1, df2, how='left', on=['city'])
+    df=pd.merge(df1, df2, how='left', on=['city', 'state_abbr'])
 
     # Drop missing values
     # Process duplicates
