@@ -120,7 +120,7 @@ The cleaned merged attributes about electricity and natural gas consumptions are
 
 * elec_lb_ghg
 
-    How much greenhouse gas is produced per megawatt hour electricity?
+    How much greenhouse gas is produced by using electricity?
 
 * elec_min_lb_ghg
 
@@ -132,7 +132,7 @@ The cleaned merged attributes about electricity and natural gas consumptions are
 
 * gas_lb_ghg
 
-    How much greenhouse gas is produced per thousand cubic feet gas?
+    How much greenhouse gas is produced by using natural gas?
 
 * gas_min_lb_ghg
 
