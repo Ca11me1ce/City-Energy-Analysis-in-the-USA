@@ -16,7 +16,7 @@ def localOutlierFactor(data, predict, k):
     predict['local outlier factor']=-clf._decision_function(predict.iloc[:, :-1])
     return predict
 
-def plot_lof(result, method):
+def plot_lof(result, method, k):
     
     # Plot LOF
     plt.rcParams['axes.unicode_minus']=False
@@ -30,7 +30,8 @@ def plot_lof(result, method):
                 marker='.', alpha=None, label='Normal')
     plt.hlines(method, -2, 2+max(result.index), linestyles='--')
     plt.xlim(-2, 2+max(result.index))
-    plt.title('LOF Outlier Detector', fontsize=13)
+    plt.title('K='+str(k)+', LOF Outlier Detector', fontsize=13)
+    plt.xlabel('Index', fontsize=15)
     plt.ylabel('Outlier Factor', fontsize=15)
     plt.legend()
     plt.show()
@@ -43,7 +44,7 @@ def lof(data, predict=None, k=5, method=1, plot=False):
     # Compute LOF
     predict=localOutlierFactor(data, predict, k)
     if plot == True:
-        plot_lof(predict, method)
+        plot_lof(predict, method, k)
 
     # Determine ouliers and inliers
     outliers=predict[predict['local outlier factor']>method].sort_values(by='local outlier factor')
@@ -68,10 +69,14 @@ if __name__ == "__main__":
     f.write('Mean/median/std\n'+str(df.describe()))
 
     # LOF algorithm
+    # Set LOF score to 2
     x=[0, 1]
     df=df.drop(df.columns[x], axis=1)
-    outliers, inliers=lof(data=df, k=100, plot=False, method=1)
-    print(len(outliers))
+
+    for k in [200, 500, 1000, 3000, 5000, 7000]:
+        outliers, inliers=lof(data=df, k=k, plot=True, method=2)
+        print('k='+str(k)+' : '+str(len(outliers)))
+
 
 
 
