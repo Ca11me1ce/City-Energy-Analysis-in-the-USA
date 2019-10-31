@@ -1,0 +1,2 @@
+,zip,city,state_abbr,town,type,naics_3,business,number_of_electricity_establishments,electricity_use,electricity_use_per_establishment,number_of_natural_gas_establishments,natural_gas_use,natural_gas_use_per_establishment,weight_of_elec,weight_of_gas,num_establishments,elec_1kdollars,elec_mwh,gas_1kdollars,gas_mcf,elec_lb_ghg,gas_lb_ghg
+0,15301,Washington,PA,Washington,commercial,623,Nursing and Residential Care Facilities,1,392,392.0,1,1890.0,1890.0,1.9807738710701855e-06,9.550159735516969e-06,8.0,129701.0,1381679.0,0.0,0.0,2355616261.0,0.0
