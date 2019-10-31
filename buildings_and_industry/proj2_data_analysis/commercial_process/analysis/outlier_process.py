@@ -63,18 +63,18 @@ def openFile(file_name):
     return f
 
 if __name__ == "__main__":
-    df=readData('energy_commercial.csv')
+    df=readData('../data/energy_commercial.csv')
 
     f=openFile('commercial_record.txt')
-    # # Mean/median/std data
-    # f.write('Mean/median/std\n'+str(df.describe()))
+    # Mean/median/std data
+    f.write('Mean/median/std before LOF\n'+str(df.describe()))
 
     # LOF algorithm
     # Set LOF score to 1.2
     x=[0, 1]
     df1=df.drop(df.columns[x], axis=1)
 
-    f.write('\nLOF Algorithm:\n')
+    f.write('\n\nLOF Algorithm:\n')
     for k in [100, 200, 500]:
         outliers, inliers=lof(data=df1, k=k, plot=True, method=1)
         print('k='+str(k)+' : '+str(len(outliers))+' outliers')
@@ -92,6 +92,8 @@ if __name__ == "__main__":
     df=df.drop(out_index)
     
     df.to_csv('cleaned_energy_commercial.csv', ',', index=False)
+    # Mean/median/std data
+    f.write('\nMean/median/std after LOF\n'+str(df.describe()))
 
     # Test by LOF
     # df2=df.drop(df.columns[x], axis=1)
