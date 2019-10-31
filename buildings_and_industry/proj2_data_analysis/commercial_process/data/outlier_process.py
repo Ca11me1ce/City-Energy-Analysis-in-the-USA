@@ -70,7 +70,7 @@ if __name__ == "__main__":
     # f.write('Mean/median/std\n'+str(df.describe()))
 
     # LOF algorithm
-    # Set LOF score to 2
+    # Set LOF score to 1.2
     x=[0, 1]
     df1=df.drop(df.columns[x], axis=1)
 
@@ -81,7 +81,7 @@ if __name__ == "__main__":
         f.write('k='+str(k)+' : '+str(len(outliers))+' outliers\n')
         outliers.to_csv('outliers_'+str(k)+'.csv', sep=',')
 
-        if k==500:
+        if k==200:
             outlier_df=outliers
 
     # Choose k=500 result
@@ -95,7 +95,7 @@ if __name__ == "__main__":
 
     # Test by LOF
     # df2=df.drop(df.columns[x], axis=1)
-    # outliers, inliers=lof(data=df2, k=200, plot=True, method=1)
+    # outliers, inliers=lof(data=df2, k=500, plot=True, method=1)
     # print(len(outliers))
 
     f.close()
