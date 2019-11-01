@@ -1,6 +1,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 from sklearn.neighbors import LocalOutlierFactor
+import numpy as np
 pd.options.display.width=0
 
 def localOutlierFactor(data, predict, k):
@@ -62,6 +63,62 @@ def openFile(file_name):
     f=open(file_name, 'w')
     return f
 
+def equalWidthBinning(myData, attr, f):
+    # Compute min and max values, then add 1 to each side.
+    minReactionNums = myData[attr].min() - 1
+    maxReactionNums = myData[attr].max() + 1
+
+    # Create even spaced bins using min and max
+    n_bin = 10 # Number of bin
+    step = (maxReactionNums - minReactionNums) / n_bin
+    bins =  np.arange(minReactionNums, maxReactionNums + step, step)
+
+    # Look at new bins. This is equi-width binning
+    reactionBins = np.digitize(myData[attr], bins)
+
+    # Count the number of values in each bin
+    reactionBinCounts = np.bincount(reactionBins)
+    print("\n\nBins are: \n ", reactionBins)
+    f.write("\n\nBins are: \n "+str(reactionBins)+'\n')
+    print("\nBin count is ", reactionBinCounts)
+    f.write("\nBin count is : "+str(reactionBinCounts)+'\n')
+
+    # Create a new variable ReactionGroups that groups posts into bins, e.g. < 200, 200-400, etc.
+    # For this example, I use the bins created above
+    myData['bin_group'] = np.digitize(myData[attr], bins)
+    print("\nAfter bin_group is added we have:\n", myData[:10])
+    f.write("\nAfter bin_group is added we have:\n"+str(myData[:10])+'\n')
+
+    # Another option to see actual bins
+    myData['bin_ranges'] = pd.cut(myData[attr], bins)
+
+    # Print Bin Counts in different ways
+    print("\nBin Counts\n")
+    f.write("\nBin Counts\n")
+    print(myData['bin_ranges'].value_counts())
+    f.write(str(myData['bin_ranges'].value_counts())+'\n')
+
+
+def equalDepthBinning(myData, attr, f):
+    names = range(1,14)
+    bins1=[0, 226, 505, 949, 1669, 2863, 4700, 8158, 14242, 23339, 41816, 90210, 252063, 11000000]
+    # myData['bin_group'] = np.digitize(myData[attr], bins1)
+    myData['bin_group'] = pd.cut(myData[attr], bins1, labels=names)
+
+    #Check the data to see the new column
+    print("\n New column of data:")
+    f.write("\n New column of data: \n")
+    print(myData[:10])
+    f.write(str(myData[:10])+'\n')
+
+    # Print Bin Counts in different ways
+    print("\nBin Counts\n")
+    f.write("\nBin Counts\n")
+    print(myData['bin_group'].value_counts())
+    f.write(str(myData['bin_group'].value_counts())+'\n')
+    return myData
+
+
 if __name__ == "__main__":
     df=readData('../data/energy_commercial.csv')
 
@@ -76,7 +133,7 @@ if __name__ == "__main__":
 
     f.write('\n\nLOF Algorithm:\n')
     for k in [100, 200, 500]:
-        outliers, inliers=lof(data=df1, k=k, plot=True, method=1)
+        outliers, inliers=lof(data=df1, k=k, plot=False, method=1)
         print('k='+str(k)+' : '+str(len(outliers))+' outliers')
         f.write('k='+str(k)+' : '+str(len(outliers))+' outliers\n')
         outliers.to_csv('outliers_'+str(k)+'.csv', sep=',')
@@ -91,7 +148,7 @@ if __name__ == "__main__":
     # Remove outliers by outlier indexes
     df=df.drop(out_index)
     
-    df.to_csv('cleaned_energy_commercial.csv', ',', index=False)
+    
     # Mean/median/std data
     f.write('\nMean/median/std after LOF\n'+str(df.describe()))
 
@@ -99,5 +156,21 @@ if __name__ == "__main__":
     # df2=df.drop(df.columns[x], axis=1)
     # outliers, inliers=lof(data=df2, k=500, plot=True, method=1)
     # print(len(outliers))
+
+    # Equal-width binning
+    binning_attr=['elec_score', 'gas_score']
+    f.write('\n\n\nEqual-width binning: \n')
+    for i in binning_attr:
+        df1=df.copy()
+        f.write('\nattr: '+i+'\n')
+        equalWidthBinning(df1, i, f)
+
+    # Equal-depth binning
+    df2=df.copy()
+    f.write('\nEqual-depth binning: \n')
+    f.write('\nattr: elec_score\n')
+    df=equalDepthBinning(df2, 'elec_score', f)
+
+    df.to_csv('cleaned_energy_commercial.csv', ',', index=False)
 
     f.close()
