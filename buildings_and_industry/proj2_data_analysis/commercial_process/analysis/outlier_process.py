@@ -127,7 +127,7 @@ if __name__ == "__main__":
     f.write('Mean/median/std before LOF\n'+str(df.describe()))
 
     # LOF algorithm
-    # Set LOF score to 1.2
+    # Set LOF score to 1
     x=[0, 1]
     df1=df.drop(df.columns[x], axis=1)
 
