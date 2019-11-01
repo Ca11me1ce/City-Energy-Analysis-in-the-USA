@@ -1,3 +1,7 @@
+# Mean/median/std
+# LOF
+# Binning
+
 import pandas as pd
 import matplotlib.pyplot as plt
 from sklearn.neighbors import LocalOutlierFactor
@@ -133,7 +137,7 @@ if __name__ == "__main__":
 
     f.write('\n\nLOF Algorithm:\n')
     for k in [100, 200, 500]:
-        outliers, inliers=lof(data=df1, k=k, plot=False, method=1)
+        outliers, inliers=lof(data=df1, k=k, plot=True, method=1)
         print('k='+str(k)+' : '+str(len(outliers))+' outliers')
         f.write('k='+str(k)+' : '+str(len(outliers))+' outliers\n')
         outliers.to_csv('outliers_'+str(k)+'.csv', sep=',')
