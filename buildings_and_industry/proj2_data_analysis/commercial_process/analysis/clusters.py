@@ -3,6 +3,7 @@ import matplotlib.pyplot as plt
 from sklearn import preprocessing
 from sklearn.cluster import KMeans
 from sklearn.cluster import AgglomerativeClustering
+from sklearn.cluster import DBSCAN
 from sklearn.metrics import silhouette_samples, silhouette_score
 
 def readData(file_name):
@@ -76,6 +77,27 @@ def clusterWard(df):
     # for i in range(len(key_ls)-1):
     #     print(pd.crosstab(cluster_labels, df[key_ls[i]]))
 
+def clusterDBScan(df):
+    df=df.drop(df.columns[[0, 1]], axis=1)
+
+    concat_ls=[]
+    key_ls=[]
+    for i in df:
+        concat_ls.append(df[i])
+        key_ls.append(i)
+
+    df=pd.concat(concat_ls, axis=1, keys=key_ls)
+    x=df.values
+    min_max_scaler = preprocessing.MinMaxScaler()
+    x_scaled = min_max_scaler.fit_transform(x)
+    normalizedDataFrame = pd.DataFrame(x_scaled)
+    # print(normalizedDataFrame[:10])
+
+    dbs=DBSCAN(eps=0.3, min_samples=10)
+    cluster_labels = dbs.fit_predict(normalizedDataFrame)
+
+    silhouette_avg = silhouette_score(normalizedDataFrame, cluster_labels)
+    print("The average silhouette_score is :", silhouette_avg)
 
 
 if __name__ == "__main__":
@@ -93,5 +115,8 @@ if __name__ == "__main__":
 
     df2=df.copy()
     clusterWard(df2)
+
+    df3=df.copy()
+    clusterDBScan(df3)
 
     
