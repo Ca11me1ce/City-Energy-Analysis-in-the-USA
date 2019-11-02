@@ -139,29 +139,29 @@ if __name__ == "__main__":
     # Read data
     df=readData('cleaned_energy_commercial.csv')
 
-    # #--------------------------------------------------
-    # # Histogram of Commercial Data
-    # df.hist()
-    # fig1=plt.gcf()
+    #--------------------------------------------------
+    # Histogram of Commercial Data
+    df.hist()
+    fig1=plt.gcf()
 
-    # plt.title('Histograme of Commercial Data')
-    # plt.show()
-    # fig1.savefig('hist.jpg')
-    # plt.clf()
+    plt.title('Histograme of Commercial Data')
+    plt.show()
+    fig1.savefig('hist.jpg')
+    plt.clf()
 
-    # # Clusters
-    # # K Means
-    # # Hierarchical - Ward
-    # # DBScan
-    # df1=df.copy()
-    # clusterKMeans(df1)
+    # Clusters
+    # K Means
+    # Hierarchical - Ward
+    # DBScan
+    df1=df.copy()
+    clusterKMeans(df1)
 
-    # df2=df.copy()
-    # clusterWard(df2)
+    df2=df.copy()
+    clusterWard(df2)
 
-    # df3=df.copy()
-    # clusterDBScan(df3)
-    # #-------------------------------------------------
+    df3=df.copy()
+    clusterDBScan(df3)
+    #-------------------------------------------------
 
     # Assciation rules
 
