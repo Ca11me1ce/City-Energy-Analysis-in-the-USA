@@ -58,7 +58,6 @@ def lof(data, predict=None, k=5, method=1, plot=False):
     inliers=predict[predict['local outlier factor']<=method].sort_values(by='local outlier factor')
     return outliers, inliers
 
-
 def readData(file_name):
     df=pd.read_csv(file_name, sep=',')
     return df
@@ -103,11 +102,10 @@ def equalWidthBinning(myData, attr, f):
     f.write(str(myData['bin_ranges'].value_counts())+'\n')
 
 
-def equalDepthBinning(myData, attr, f):
-    names = range(1,14)
-    bins1=[0, 226, 505, 949, 1669, 2863, 4700, 8158, 14242, 23339, 41816, 90210, 252063, 11000000]
-    # myData['bin_group'] = np.digitize(myData[attr], bins1)
-    myData['bin_group'] = pd.cut(myData[attr], bins1, labels=names)
+def equalDepthBinning(myData, attr, f, mode, bins):
+    names = range(1, 4)
+    # myData['bin_group'] = np.digitize(myData[attr], bins)
+    myData[mode+'_bin_group'] = pd.cut(myData[attr], bins, labels=names)
 
     #Check the data to see the new column
     print("\n New column of data:")
@@ -118,8 +116,8 @@ def equalDepthBinning(myData, attr, f):
     # Print Bin Counts in different ways
     print("\nBin Counts\n")
     f.write("\nBin Counts\n")
-    print(myData['bin_group'].value_counts())
-    f.write(str(myData['bin_group'].value_counts())+'\n')
+    print(myData[mode+'_bin_group'].value_counts())
+    f.write(str(myData[mode+'_bin_group'].value_counts())+'\n')
     return myData
 
 
@@ -172,8 +170,12 @@ if __name__ == "__main__":
     df2=df.copy()
     f.write('\nEqual-depth binning: \n')
     f.write('\nattr: elec_score\n')
-    df=equalDepthBinning(df2, 'elec_score', f)
 
+    # Get elec/gas binning
+    bins1=[-1, 1720, 10991, 1181389]
+    bins2=[-1, 1674, 24027, 4368494]
+    df2=equalDepthBinning(df2, 'elec_mwh', f, 'elec', bins1)
+    df=equalDepthBinning(df2, 'gas_mcf', f, 'gas', bins2)
     df.to_csv('cleaned_energy_commercial.csv', ',', index=False)
 
     f.close()
