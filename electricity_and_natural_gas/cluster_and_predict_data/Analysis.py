@@ -31,6 +31,8 @@ from sklearn.neighbors import KNeighborsClassifier
 from sklearn.metrics import accuracy_score
 from sklearn.metrics import classification_report
 from sklearn.metrics import confusion_matrix
+from mlxtend.frequent_patterns import association_rules
+
 
 def extractData():
     myData = pd.read_csv("../collect_and_clean_data/cleaned_residential.csv", sep=',', encoding='latin1')
@@ -102,6 +104,8 @@ def binning(myData, attr, k):
     #print(myData['total_pop'].max())
     n_bin = k
     step = (maxNum - minNum) / n_bin
+    #print(minNum)
+    #print(step)
     bins =  np.arange(minNum, maxNum + step, step)
     #This is equi-width binning
     Bins = np.digitize(myData[attr], bins)
@@ -115,32 +119,40 @@ def binOutlier(myData, attr, upperBound):
     outlierAmount = 0
     totalAmount = 0
     for i in range(100):
-        if i < 1 or i > 11:
+        if i >= 2:
             outlierAmount += BinCounts[i]
         totalAmount += BinCounts[i]
     print("\nOutlier percentage of ", attr, " is ", outlierAmount * 1.00 / totalAmount)
     # Store the upper bound into the upperBound list.
-    upperBound.append(bins[11])
+    upperBound.append(bins[1])
+    #print(bins[1])
 
-def deleteOutliers(myData, attr,upperBound):
+def processOutliers(myData, attr, upperBound):
     # To compare LOF and binning method.
     # Do not change myData directly.
     # Make a copy of precessed data frame.
-    binnedData = myData[myData[attr] < upperBound]
-    return binnedData
+#    myData.loc[myData[attr] < lowerBound] = lowerBound
+    myData.loc[myData[attr] > upperBound, attr] = upperBound
+#    myData = myData[myData[attr] < upperBound]
+#    myData = myData[myData[attr] > lowerBound]
+    return myData
 
 def binData(myData):
-    # Save the upper bound of non-outliers.
+    # Save the lower and upper bound of non-outliers.
+    lowerBound = []
     upperBound = []
+    binnedData = myData
     # The collection of attributes that might have outliers
     attrs = ['housing_units', 'total_pop', 'elec_1kdollars', 'elec_mwh', 'gas_1kdollars', 'gas_mcf', 'elec_lb_ghg', 'gas_lb_ghg']
     # For each attribute, bin it get the upper bound of non-outliers.
     for attr in attrs:
-        binOutlier(myData, attr, upperBound)
+        binOutlier(binnedData, attr, upperBound)
     # Delete the outliers. 
     # To compare LOF and binning method. Do not change myData directly. Make a copy of myData and change it.
+    #binnedData = myData
     for i in range(len(attrs)):
-        binnedData = deleteOutliers(myData, attrs[i], upperBound[i])
+        binnedData = processOutliers(binnedData, attrs[i], upperBound[i])
+        #print(binnedData[attrs[i]].max() - binnedData[attrs[i]].min())
     # The result is stored into file.
     binnedData.to_csv("binned_residential.csv")
     return binnedData
@@ -150,9 +162,9 @@ def findMissing(myData):
     print("the fraction of missing value is: ", frac)
 
 def binClass(myData):
-    (BinCounts, bins) = binning(myData, "elec_mwh", 5)
+    (BinCounts, bins) = binning(myData, "elec_mwh", 3)
     myData["elec_degree"] = np.digitize(myData["elec_mwh"], bins)
-    (BinCounts, bins) = binning(myData, "gas_mcf", 5)
+    (BinCounts, bins) = binning(myData, "gas_mcf", 3)
     myData["gas_degree"] = np.digitize(myData["gas_mcf"], bins)
     # Store the data frame with two new attributes into a new file.
     binnedData.to_csv("degreed_residential.csv", index=False)
@@ -182,17 +194,17 @@ def LOF(myData):
 
 def compare(myData, binnedData):
     print("For LOF algorithm:")
-    binning(myData, "elec_mwh", 5)
-    binning(binnedData, "gas_mcf", 5)
+    binning(myData, "elec_mwh", 3)
+    binning(myData, "gas_mcf", 3)
     print("For binning method:")
-    binning(binnedData, "elec_mwh", 5)
-    binning(binnedData, "gas_mcf", 5)
+    binning(binnedData, "elec_mwh", 3)
+    binning(binnedData, "gas_mcf", 3)
 
 def plotData(binnedData):
     df = binnedData.drop(['state_id', 'city', 'elec_degree', 'gas_degree', 'elec_1kdollars', 'gas_1kdollars', 'elec_lb_ghg', 'gas_lb_ghg'], axis = 1)
     df.hist()
     #plt.savefig('Histogram.png')
-    plt.show()
+    #plt.show()
 
 def correlation(binnedData):
     # Get the sub data set with 4 attributes.
@@ -201,7 +213,7 @@ def correlation(binnedData):
     print(df.corr())
     # Plot a set of scatterplot subplots.
     scatter_matrix(df)
-    plt.show()
+    #plt.show()
     #plt.savefig('scatterplot.png')
 
 def clustering(binnedData):
@@ -247,19 +259,33 @@ def associationRule(myData):
     # Convert the type of degree attributes to string.
     attrs = ['elec_degree', 'gas_degree']
     for attr in attrs:
-        df[attr][df[attr] == 1] = attr + "_very_low"
-        df[attr][df[attr] == 2] = attr + "_low"
-        df[attr][df[attr] == 3] = attr + "_medium"
-        df[attr][df[attr] == 4] = attr + "_high"
-        df[attr][df[attr] == 5] = attr + "_very_high"
+        df[attr][df[attr] == 1] = attr + "_normal"
+        df[attr][df[attr] == 2] = attr + "_high"
+        df[attr][df[attr] == 3] = attr + "_very_high"
+    print(df[:10])
     # Apply Apriori algorithm.
     valueArray = df.values
     te = TransactionEncoder()
     te_ary = te.fit(valueArray).transform(valueArray)
     df = pd.DataFrame(te_ary, columns=te.columns_)
-    result = apriori(df, min_support=0.05, use_colnames=True) 
+    frequent_itemsets = apriori(df, min_support=0.05, use_colnames=True) 
     #print(result.support.max())
+    print(frequent_itemsets)
+    result = association_rules(frequent_itemsets, metric="confidence", min_threshold=0.6)
     print(result)
+
+def t_test(myData):
+    result = stats.ttest_ind(myData['elec_degree'], myData['gas_degree'])
+    print("The result of t-test is: ", result)
+    print("Is the pvalie larger than 0.05? ", result.pvalue > 0.05)
+
+def linearReg(myData):
+    #print(myData[:10])
+    valueArray = myData.values
+    X = valueArray[:, 2:3]
+    Y = valueArray[:, 10]
+    reg = LinearRegression().fit(X, Y)
+    print("The score of linear regression is: ", reg.score(X, Y))
 
 def evaluateAlg(myData, k):
     # First remove class label from data (X). Setup target class (Y)
@@ -268,7 +294,7 @@ def evaluateAlg(myData, k):
     Y = valueArray[:, k] 
     # Then make the validation set 20% of the entire set of labeled data (X_validate, Y_validate)
     test_size = 0.20
-    seed = 7
+    seed = 10
 
     X_train, X_validate, Y_train, Y_validate = train_test_split(X, Y, test_size=test_size, random_state=seed)
     # Setup 10-fold cross validation to estimate the accuracy of different models
@@ -276,7 +302,7 @@ def evaluateAlg(myData, k):
     # Test options and evaluation metric
     num_folds = 10
     num_instance = len(X_train)
-    seed = 7
+    seed = 10
     scoring = 'accuracy'
     # Use different algorithms to build models
     # Add each algorithm and its name to the model array
@@ -316,6 +342,10 @@ def validateData(X_train, Y_train, X_validate, Y_validate):
         print(classification_report(Y_validate, predictions))
 
 def predictAna(myData):
+    # T-test
+    t_test(myData)
+    # liear regression
+    linearReg(myData)
     # Drop unnecessary attributes. The elec_mwh and gas_mcf attributes should be dropped because they can generate the class labels.
     myData.drop(['state_id', 'city', 'elec_mwh', 'gas_mcf'], axis = 1, inplace = True)
     print("-----------------electricity degree prediction---------------")
@@ -329,8 +359,9 @@ if __name__ == "__main__":
     # Get the useful attributes.
     myData = extractAttrs()
     # Calculate the mean, median and standard deviation of numeric attributes.
-#    statisticalAnalysis(myData)
-    binnedData = binData(myData)
+    statisticalAnalysis(myData)
+    binnedData = pd.read_csv("cleaned_residential.csv", sep=',', encoding='latin1')
+    binnedData = binData(binnedData)
     # Calculate the fraction of missing values of raw data.
     findMissing(binnedData)
     # Bin the two class attributes into 5 bins which represents 5 degrees.
