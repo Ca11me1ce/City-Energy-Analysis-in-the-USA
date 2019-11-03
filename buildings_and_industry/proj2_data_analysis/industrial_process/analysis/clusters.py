@@ -182,12 +182,12 @@ if __name__=="__main__":
 
     print('Running clusters')
     # Read data
-    df=readData('cleaned_energy_commercial.csv')
+    df=readData('cleaned_energy_industrial.csv')
 
-    # Histogram of Commercial Data
+    # Histogram of Industrial Data
     # Correlation
     df.hist()
-    plt.title('Histograme of Commercial Data')
+    plt.title('Histograme of Industrial Data')
     fig1=plt.gcf()
     plt.show()
     fig1.savefig('hist.jpg')

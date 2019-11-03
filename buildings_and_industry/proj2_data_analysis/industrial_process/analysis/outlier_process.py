@@ -124,9 +124,9 @@ def equalDepthBinning(myData, attr, f, mode, bins):
 if __name__ == "__main__":
 
     print('Running statistical record, LOF, and Binning')
-    df=readData('../data/energy_commercial.csv')
+    df=readData('../data/energy_industrial.csv')
 
-    f=openFile('commercial_record.txt')
+    f=openFile('industrial_record.txt')
     # Mean/median/std data
     f.write('Mean/median/std before LOF\n'+str(df.describe()))
 
@@ -174,10 +174,10 @@ if __name__ == "__main__":
     f.write('\nattr: elec_score\n')
 
     # Get elec/gas binning
-    bins1=[-1, 1720, 10991, 1181389]
-    bins2=[-1, 1674, 24027, 4368494]
+    bins1=[-1, 3806, 22422, 9948074]
+    bins2=[-1, 22342, 145238, 144722117]
     df2=equalDepthBinning(df2, 'elec_mwh', f, 'elec', bins1)
     df=equalDepthBinning(df2, 'gas_mcf', f, 'gas', bins2)
-    df.to_csv('cleaned_energy_commercial.csv', ',', index=False)
+    df.to_csv('cleaned_energy_industrial.csv', ',', index=False)
 
     f.close()
