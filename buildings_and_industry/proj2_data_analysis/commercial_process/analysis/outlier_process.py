@@ -122,6 +122,8 @@ def equalDepthBinning(myData, attr, f, mode, bins):
 
 
 if __name__ == "__main__":
+
+    print('Running statistical record, LOF, and Binning')
     df=readData('../data/energy_commercial.csv')
 
     f=openFile('commercial_record.txt')

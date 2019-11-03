@@ -178,6 +178,7 @@ def associationRules(myData):
 
 if __name__=="__main__":
 
+    print('Running clusters')
     # Read data
     df=readData('cleaned_energy_commercial.csv')
 

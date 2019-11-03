@@ -221,6 +221,7 @@ def tTest(myData):
 
 if __name__ == "__main__":
 
+    print('Running Linear Regression, T-test, and Classfiers')
     # Read data
     df=readData('cleaned_energy_commercial.csv')
 
@@ -238,13 +239,16 @@ if __name__ == "__main__":
     linearRegression(elec_df)
     linearRegression(gas_df)
 
+    # T-test
+    tTest(df)
+
+    # Classfiers
     print('\nClassfier for Elec Dataframe: ')
     predictByClassfiers(elec_df)
     print('\nClassfier for Gas Dataframe: ')
     predictByClassfiers(gas_df)
 
-    # T-test
-    tTest(df)
+    
     
 
     
