@@ -232,10 +232,10 @@ if __name__ == "__main__":
     linearRegression(elec_df)
     linearRegression(gas_df)
 
-    # print('\nClassfier for Elec Dataframe: ')
-    # testClassfier(elec_df)
-    # print('\nClassfier for Gas Dataframe: ')
-    # testClassfier(gas_df)
+    print('\nClassfier for Elec Dataframe: ')
+    testClassfier(elec_df)
+    print('\nClassfier for Gas Dataframe: ')
+    testClassfier(gas_df)
     
 
     
