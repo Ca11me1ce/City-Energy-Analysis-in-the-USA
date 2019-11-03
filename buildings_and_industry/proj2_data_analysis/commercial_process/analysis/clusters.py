@@ -2,6 +2,8 @@
 # Hierarchical - Ward
 # DBScan
 # Association Rules
+# Histograme
+# Correlation
 
 import pandas as pd
 import matplotlib.pyplot as plt
