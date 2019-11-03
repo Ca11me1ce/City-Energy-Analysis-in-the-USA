@@ -12,6 +12,8 @@ from sklearn.model_selection import KFold
 from sklearn.naive_bayes import GaussianNB
 from sklearn.svm import SVC
 from sklearn.ensemble import RandomForestClassifier
+from sklearn.linear_model import LinearRegression
+
 
 
 
@@ -188,6 +190,27 @@ def testClassfier(myData):
     run_svm(X_train, Y_train, X_validate, Y_validate, num_instances)
     run_rf(X_train, Y_train, X_validate, Y_validate, num_instances)
 
+    
+
+def linearRegression(myData):
+    valueArray = myData.values
+    j=1
+    for i in range(5):
+        X = valueArray[:, i:j]
+        Y = valueArray[:, 5]
+
+        linear_regressor = LinearRegression()  # create object for the class
+        linear_regressor.fit(X, Y)  # perform linear regression
+        Y_pred = linear_regressor.predict(X)  # make predictions
+        j=j+1
+        # print(Y_pred)
+        # print(len(X[0]))
+
+        plt.scatter(X, Y)
+        plt.plot(X, Y_pred, color='red')
+        plt.show()
+        plt.clf()
+
 
 
 if __name__ == "__main__":
@@ -205,7 +228,14 @@ if __name__ == "__main__":
     gas_df=df.drop(df.columns[y], axis=1)
     # print(gas_df.info())
 
-    print('\nClassfier for Elec Dataframe: ')
-    testClassfier(elec_df)
-    print('\nClassfier for Gas Dataframe: ')
-    testClassfier(gas_df)
+    # Linear regression
+    linearRegression(elec_df)
+    linearRegression(gas_df)
+
+    # print('\nClassfier for Elec Dataframe: ')
+    # testClassfier(elec_df)
+    # print('\nClassfier for Gas Dataframe: ')
+    # testClassfier(gas_df)
+    
+
+    
