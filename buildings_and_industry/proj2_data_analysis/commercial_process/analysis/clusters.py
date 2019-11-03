@@ -2,7 +2,7 @@
 # Hierarchical - Ward
 # DBScan
 # Association Rules
-# Histograme
+# Histogram
 # Correlation
 
 import pandas as pd
