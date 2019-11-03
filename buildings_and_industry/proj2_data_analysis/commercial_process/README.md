@@ -2,8 +2,8 @@
 # Dr. Lisa Singh
 # Author: Yang Chen
 ```bash
-../commercial_process/data/
-../commercial_process/analysis/
+./commercial_process/data/
+./commercial_process/analysis/
 ```
 
 ## Analysis Folder
