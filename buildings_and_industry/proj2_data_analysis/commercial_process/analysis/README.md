@@ -2,9 +2,10 @@
 # Dr. Lisa Singh
 # Author: Yang Chen
 
+## Analysis Folder
 * run.sh: Running shell script to run py files by the order sequence.
 
-## Exploratory Analysis
+### Exploratory Analysis
 
 * outlier_process.py: The py file processes the statistical report(mean/median/std/mode), LOF algorithm, and Binning algorithms. It solved noisy and to construct cleaned_enery_commercial.csv for analysis, and records print-out info in commercial_record.txt.
 
@@ -28,6 +29,6 @@
 
 * hist.jpg: Histogram plot of all features of data.
 
-## Predictive Analysis
+### Predictive Analysis
 
-* prediction.py: The py file processes the T-test, linear  regression, and classfiers.
+* prediction.py: The py file processes the T-test, linear  regression, and classfiers. All info will be printed in the terminal.
