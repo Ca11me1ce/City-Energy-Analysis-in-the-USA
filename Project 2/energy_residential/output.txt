@@ -1,0 +1,372 @@
+The mean of each attribute is: 
+ housing_units     3.954032e+03
+total_pop         1.063390e+04
+elec_1kdollars    5.065999e+03
+elec_mwh          3.820879e+04
+gas_1kdollars     1.695562e+03
+gas_mcf           1.686994e+05
+elec_lb_ghg       5.701948e+07
+gas_lb_ghg        2.025113e+07
+dtype: float64
+
+The median of each attribute is: 
+housing_units     551.0
+total_pop     1446.0
+elec_1kdollars     765.0
+elec_mwh     6085.0
+gas_1kdollars     114.0
+gas_mcf     11627.0
+elec_lb_ghg     9133653.0
+gas_lb_ghg     1395736.0
+
+The standard deviation of each attribute is: 
+ housing_units     3.530588e+04
+total_pop         9.560821e+04
+elec_1kdollars    4.162461e+04
+elec_mwh          2.385554e+05
+gas_1kdollars     2.233690e+04
+gas_mcf           1.969534e+06
+elec_lb_ghg       3.581605e+08
+gas_lb_ghg        2.364281e+08
+dtype: float64
+
+Bin count of  housing_units  is  [    0 23133   259    68    27    12    16     2    11    11     5     4
+     2     0     0     0     3     0     1     2     0     0     0     0
+     0     0     0     1     0     0     0     0     0     0     2     0
+     0     0     0     0     0     0     0     0     1     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     2]
+
+Outlier percentage of  housing_units  is  0.018123938879456708
+
+Bin count of  total_pop  is  [    0 23118   265    80    27    11    12     3    20     4     4     4
+     2     0     0     0     1     1     1     3     0     0     0     0
+     0     0     0     1     0     0     0     0     0     2     0     0
+     0     0     0     0     0     0     0     0     0     0     0     1
+     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     2]
+
+Outlier percentage of  total_pop  is  0.018760611205432938
+
+Bin count of  elec_1kdollars  is  [    0 23098   279    62    46    15    15     6     6     5     8     6
+     2     0     3     0     0     0     3     1     0     0     0     0
+     0     3     0     0     0     0     0     0     1     0     0     0
+     0     0     1     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     2]
+
+Outlier percentage of  elec_1kdollars  is  0.01960950764006791
+
+Bin count of  elec_mwh  is  [    0 22473   657   176    76    33    21    30    14    13     4     7
+     6    10     3     4     6     0     4     2     1     0     0     1
+     4     2     2     1     0     2     1     0     0     0     0     0
+     0     0     0     0     1     0     0     1     0     0     0     0
+     0     2     1     0     0     0     0     0     0     0     0     0
+     0     1     0     0     0     0     0     0     0     0     0     1
+     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     2]
+
+Outlier percentage of  elec_mwh  is  0.04613752122241087
+
+Bin count of  gas_1kdollars  is  [    0 23339   134    19    29    11     8     6     7     1     0     0
+     0     0     0     0     0     1     0     0     0     0     3     0
+     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     2     0
+     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     2]
+
+Outlier percentage of  gas_1kdollars  is  0.009380305602716469
+
+Bin count of  gas_mcf  is  [    0 23260   191    37    21    15     6    14     4     4     2     0
+     0     0     0     0     0     0     0     2     0     0     1     0
+     1     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     2     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     2]
+
+Outlier percentage of  gas_mcf  is  0.012733446519524618
+
+Bin count of  elec_lb_ghg  is  [    0 22498   631   182    72    38    18    24    20    10    11     3
+     4    10     4     4     1     1     1     1     1     4     0     2
+     3     0     1     4     1     1     1     0     0     0     0     0
+     1     2     0     1     0     0     0     1     0     0     0     0
+     0     0     0     0     0     0     0     1     2     0     0     0
+     0     0     0     0     1     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     2]
+
+Outlier percentage of  elec_lb_ghg  is  0.04507640067911715
+
+Bin count of  gas_lb_ghg  is  [    0 23260   191    37    21    15     6    14     4     4     2     0
+     0     0     0     0     0     0     0     2     0     0     1     0
+     1     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     2     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     2]
+
+Outlier percentage of  gas_lb_ghg  is  0.012733446519524618
+the fraction of missing value is:  state_id          0.0
+city              0.0
+housing_units     0.0
+total_pop         0.0
+elec_1kdollars    0.0
+elec_mwh          0.0
+gas_1kdollars     0.0
+gas_mcf           0.0
+elec_lb_ghg       0.0
+gas_lb_ghg        0.0
+dtype: float64
+
+Bin count of  elec_mwh  is  [    0 20218  1653  1691]
+
+Bin count of  gas_mcf  is  [    0 22259   751   552]
+The k of LOF is  100
+
+Bin count of  lof_score_100  is  [    0     2     0     0     0     0     3     1     7    55 24398]
+The k of LOF is  500
+
+Bin count of  lof_score_500  is  [    0     2     0     0     0     2     1     1     5    23 24432]
+The k of LOF is  1000
+
+Bin count of  lof_score_1000  is  [    0     2     0     0     0     2     2     0     6    24 24430]
+For LOF algorithm:
+
+Bin count of  elec_mwh  is  [    0 24457     6     3]
+
+Bin count of  gas_mcf  is  [    0 24462     2     2]
+For binning method:
+
+Bin count of  elec_mwh  is  [    0 20218  1653  1691]
+
+Bin count of  gas_mcf  is  [    0 22259   751   552]
+               housing_units  total_pop  elec_mwh   gas_mcf
+housing_units       1.000000   0.994423  0.923064  0.884154
+total_pop           0.994423   1.000000  0.917678  0.877276
+elec_mwh            0.923064   0.917678  1.000000  0.796833
+gas_mcf             0.884154   0.877276  0.796833  1.000000
+For  k-means  clustering, the average silhouette_score is :0.6680704850340499; the calinski harabasz score is :61496.10131248856.
+For  k-means clustering, the pca score is  [0.28232911 0.01911236]
+For  Ward  clustering, the average silhouette_score is :0.6195685793092233; the calinski harabasz score is :52046.17918418183.
+For  Ward clustering, the pca score is  [0.28232911 0.01911236]
+For  DBScan  clustering, the average silhouette_score is :0.7344738624534686; the calinski harabasz score is :25606.67619663513.
+For  DBScan clustering, the pca score is  [0.28232911 0.01911236]
+  state_id            elec_degree            gas_degree
+0       AK     elec_degree_normal     gas_degree_normal
+1       AK     elec_degree_normal     gas_degree_normal
+2       AK     elec_degree_normal     gas_degree_normal
+3       AK     elec_degree_normal     gas_degree_normal
+4       AK     elec_degree_normal     gas_degree_normal
+5       AK     elec_degree_normal     gas_degree_normal
+6       AK     elec_degree_normal     gas_degree_normal
+7       AK     elec_degree_normal     gas_degree_normal
+8       AK     elec_degree_normal     gas_degree_normal
+9       AK  elec_degree_very_high  gas_degree_very_high
+     support                                     itemsets
+0   0.056192                                         (IL)
+1   0.082845                                         (PA)
+2   0.051524                                         (TX)
+3   0.070155                           (elec_degree_high)
+4   0.858077                         (elec_degree_normal)
+5   0.071768                      (elec_degree_very_high)
+6   0.944699                          (gas_degree_normal)
+7   0.072065                     (elec_degree_normal, PA)
+8   0.080341                      (gas_degree_normal, PA)
+9   0.058526        (elec_degree_high, gas_degree_normal)
+10  0.857610      (elec_degree_normal, gas_degree_normal)
+11  0.072065  (elec_degree_normal, gas_degree_normal, PA)
+                antecedents  ...  conviction
+0                      (PA)  ...    1.090687
+1                      (PA)  ...    1.829616
+2        (elec_degree_high)  ...    0.333622
+3      (elec_degree_normal)  ...  101.643069
+4       (gas_degree_normal)  ...    1.539510
+5  (elec_degree_normal, PA)  ...         inf
+6   (gas_degree_normal, PA)  ...    1.377749
+7                      (PA)  ...    1.094275
+
+[8 rows x 9 columns]
+The result of t-test is:  Ttest_indResult(statistic=31.557228736693705, pvalue=2.5842736854136347e-216)
+Is the pvalie larger than 0.05?  False
+The score of linear regression is:  0.7770601547487651
+-----------------electricity degree prediction---------------
+KNN: 0.962120 (0.003793)
+DecisionTree: 0.982705 (0.002644)
+Naive Bayes: 0.664545 (0.011824)
+SVM: 0.966470 (0.004020)
+RandomForest: 0.985145 (0.003104)
+KNN
+0.966687884574581
+[[4004   40    0]
+ [  57  270   24]
+ [   0   36  282]]
+              precision    recall  f1-score   support
+
+         1.0       0.99      0.99      0.99      4044
+         2.0       0.78      0.77      0.77       351
+         3.0       0.92      0.89      0.90       318
+
+    accuracy                           0.97      4713
+   macro avg       0.90      0.88      0.89      4713
+weighted avg       0.97      0.97      0.97      4713
+
+DecisionTree
+0.9853596435391471
+[[4031   13    0]
+ [  23  313   15]
+ [   0   18  300]]
+              precision    recall  f1-score   support
+
+         1.0       0.99      1.00      1.00      4044
+         2.0       0.91      0.89      0.90       351
+         3.0       0.95      0.94      0.95       318
+
+    accuracy                           0.99      4713
+   macro avg       0.95      0.94      0.95      4713
+weighted avg       0.99      0.99      0.99      4713
+
+Naive Bayes
+0.6619987269255252
+[[2914  348  782]
+ [ 176   39  136]
+ [ 117   34  167]]
+              precision    recall  f1-score   support
+
+         1.0       0.91      0.72      0.80      4044
+         2.0       0.09      0.11      0.10       351
+         3.0       0.15      0.53      0.24       318
+
+    accuracy                           0.66      4713
+   macro avg       0.39      0.45      0.38      4713
+weighted avg       0.80      0.66      0.71      4713
+
+SVM
+0.9652026310205813
+[[4011   33    0]
+ [  65  269   17]
+ [   0   49  269]]
+              precision    recall  f1-score   support
+
+         1.0       0.98      0.99      0.99      4044
+         2.0       0.77      0.77      0.77       351
+         3.0       0.94      0.85      0.89       318
+
+    accuracy                           0.97      4713
+   macro avg       0.90      0.87      0.88      4713
+weighted avg       0.96      0.97      0.96      4713
+
+RandomForest
+0.987481434330575
+[[4028   16    0]
+ [  16  325   10]
+ [   0   17  301]]
+              precision    recall  f1-score   support
+
+         1.0       1.00      1.00      1.00      4044
+         2.0       0.91      0.93      0.92       351
+         3.0       0.97      0.95      0.96       318
+
+    accuracy                           0.99      4713
+   macro avg       0.96      0.96      0.96      4713
+weighted avg       0.99      0.99      0.99      4713
+
+-----------------natural gas degree prediction---------------
+KNN: 0.998833 (0.000849)
+DecisionTree: 0.999947 (0.000159)
+Naive Bayes: 0.763489 (0.012315)
+SVM: 0.999151 (0.000794)
+RandomForest: 0.999947 (0.000159)
+KNN
+0.9985147464460005
+[[4465    3    0]
+ [   4  134    0]
+ [   0    0  107]]
+              precision    recall  f1-score   support
+
+         1.0       1.00      1.00      1.00      4468
+         2.0       0.98      0.97      0.97       138
+         3.0       1.00      1.00      1.00       107
+
+    accuracy                           1.00      4713
+   macro avg       0.99      0.99      0.99      4713
+weighted avg       1.00      1.00      1.00      4713
+
+DecisionTree
+0.9997878209208572
+[[4467    1    0]
+ [   0  138    0]
+ [   0    0  107]]
+              precision    recall  f1-score   support
+
+         1.0       1.00      1.00      1.00      4468
+         2.0       0.99      1.00      1.00       138
+         3.0       1.00      1.00      1.00       107
+
+    accuracy                           1.00      4713
+   macro avg       1.00      1.00      1.00      4713
+weighted avg       1.00      1.00      1.00      4713
+
+Naive Bayes
+0.7695735200509229
+[[3446  742  280]
+ [  12   81   45]
+ [   0    7  100]]
+              precision    recall  f1-score   support
+
+         1.0       1.00      0.77      0.87      4468
+         2.0       0.10      0.59      0.17       138
+         3.0       0.24      0.93      0.38       107
+
+    accuracy                           0.77      4713
+   macro avg       0.44      0.76      0.47      4713
+weighted avg       0.95      0.77      0.84      4713
+
+SVM
+0.9987269255251432
+[[4468    0    0]
+ [   6  132    0]
+ [   0    0  107]]
+              precision    recall  f1-score   support
+
+         1.0       1.00      1.00      1.00      4468
+         2.0       1.00      0.96      0.98       138
+         3.0       1.00      1.00      1.00       107
+
+    accuracy                           1.00      4713
+   macro avg       1.00      0.99      0.99      4713
+weighted avg       1.00      1.00      1.00      4713
+
+RandomForest
+0.9997878209208572
+[[4468    0    0]
+ [   1  137    0]
+ [   0    0  107]]
+              precision    recall  f1-score   support
+
+         1.0       1.00      1.00      1.00      4468
+         2.0       1.00      0.99      1.00       138
+         3.0       1.00      1.00      1.00       107
+
+    accuracy                           1.00      4713
+   macro avg       1.00      1.00      1.00      4713
+weighted avg       1.00      1.00      1.00      4713
+
