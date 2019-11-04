@@ -35,7 +35,7 @@ from mlxtend.frequent_patterns import association_rules
 
 
 def extractData():
-    myData = pd.read_csv("../collect_and_clean_data/cleaned_residential.csv", sep=',', encoding='latin1')
+    myData = pd.read_csv("../../electricity_and_natural_gas/collect_and_clean_data/cleaned_residential.csv", sep=',', encoding='latin1')
     myData.drop(['elec_1kdollars_bin_min', 'elec_1kdollars_bin_max', 'elec_mwh_bin_min', 'elec_mwh_bin_max', 'gas_1kdollars_bin_min', 'gas_1kdollars_bin_max', 'gas_mcf_bin_min', 'gas_mcf_bin_max', 'elec_min_lb_ghg', 'elec_max_lb_ghg', 'gas_min_lb_ghg', 'gas_max_lb_ghg'], axis = 1, inplace=True)
     return myData
 
