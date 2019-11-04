@@ -3,7 +3,16 @@
 # Author: Yang Chen
 
 ## Analysis Folder
-* run.sh: Running shell script to run py files by the order sequence.
+* run.sh: Running shell script to run py files by the order sequence. Run all py files in this order.<br/>
+
+Windows Command:
+```bash
+$run.sh
+```
+Linux Commands:
+```bash
+$./run.sh
+```
 
 ### Exploratory Analysis
 
