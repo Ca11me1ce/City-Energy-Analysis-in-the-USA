@@ -249,12 +249,12 @@ if __name__ == "__main__":
     tTest(df, 'elec_score', 'gas_score')
 
     # Linear regression
-    # linearRegression(elec_df)
-    # linearRegression(gas_df)
+    linearRegression(elec_df)
+    linearRegression(gas_df)
 
     # Classfiers
-    # print('\nClassfier for Elec Dataframe: ')
-    # predictByClassfiers(elec_df)
+    print('\nClassfier for Elec Dataframe: ')
+    predictByClassfiers(elec_df)
     print('\nClassfier for Gas Dataframe: ')
     predictByClassfiers(gas_df)
 

@@ -145,7 +145,7 @@ if __name__ == "__main__":
         if k==200:
             outlier_df=outliers
 
-    # Choose k=500 result
+    # Choose k=200 result
     out_index=outlier_df.index.to_list()
     f.write('\nOutlier Indexes: '+str(out_index)+'\n')
 
@@ -157,7 +157,7 @@ if __name__ == "__main__":
 
     # Test by LOF
     # df2=df.drop(df.columns[x], axis=1)
-    # outliers, inliers=lof(data=df2, k=500, plot=True, method=1)
+    # outliers, inliers=lof(data=df2, k=200, plot=True, method=1)
     # print(len(outliers))
 
     # Equal-width binning
