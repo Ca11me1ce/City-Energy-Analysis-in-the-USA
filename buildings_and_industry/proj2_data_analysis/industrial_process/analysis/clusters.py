@@ -155,11 +155,14 @@ def plotPCA(normalizedDataFrame, mode, cluster_labels):
     # Clear plot
     plt.clf()
 
-def associationRules(myData):
+def associationRules(myData, min_support):
+    print('Association Rules when min_support=', min_support)
     df=pd.DataFrame()
     attrs=['elec_class', 'gas_class']
     df['elec_class']=myData['elec_bin_group']
     df['gas_class']=myData['gas_bin_group']
+
+    
 
     # Convert group to class representation
     for attr in attrs:
@@ -167,11 +170,13 @@ def associationRules(myData):
         df[attr][df[attr]==2]=attr+"_high"
         df[attr][df[attr]==3]=attr+"_very_high"
 
+    # print(df[:10])
+
     valueArray=df.values
     _encoder=TransactionEncoder()
     encoder_labels=_encoder.fit(valueArray).transform(valueArray)
     df=pd.DataFrame(encoder_labels, columns=_encoder.columns_)
-    frequent_itemsets=apriori(df, min_support=0.05, use_colnames=True) 
+    frequent_itemsets=apriori(df, min_support=min_support, use_colnames=True) 
 
     print(frequent_itemsets)
     result=association_rules(frequent_itemsets, metric="confidence", min_threshold=0.6)
@@ -209,6 +214,7 @@ if __name__=="__main__":
     clusterDBScan(df3)
 
     # Assciation Rules
-    associationRules(df)
+    for i in [0.05, 0.1, 0.3, ]:
+        associationRules(df, i)
 
     

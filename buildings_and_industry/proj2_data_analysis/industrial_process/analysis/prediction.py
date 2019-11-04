@@ -199,6 +199,7 @@ def predictByClassfiers(myData):
     runRandomForest(X_train, Y_train, X_validate, Y_validate, num_instances)
    
 def linearRegression(myData):
+    print(myData.info())
     valueArray=myData.values
     j=1
     for i in range(5):
@@ -208,6 +209,7 @@ def linearRegression(myData):
         linear_regressor=LinearRegression()  # create object for the class
         linear_regressor.fit(X, Y)  # perform linear regression
         Y_pred=linear_regressor.predict(X)  # make predictions
+        print("The score of linear regression is: ", linear_regressor.score(X, Y))
         j=j+1
         # print(Y_pred)
         # print(len(X[0]))
@@ -217,10 +219,10 @@ def linearRegression(myData):
         plt.show()
         plt.clf()
 
-def tTest(myData):
-    result = stats.ttest_ind(myData['elec_bin_group'], myData['gas_bin_group'])
+def tTest(myData, i, j):
+    result = stats.ttest_ind(myData[i], myData[j])
     print("The result of t-test is: ", result)
-    print("The p-valie is greater than 0.05? ", result.pvalue > 0.05)
+    print("The p-value is greater than 0.05? ", result.pvalue > 0.05)
 
 
 if __name__ == "__main__":
@@ -239,16 +241,20 @@ if __name__ == "__main__":
     gas_df=df.drop(df.columns[y], axis=1)
     # print(gas_df.info())
 
-    # Linear regression
-    linearRegression(elec_df)
-    linearRegression(gas_df)
-
     # T-test
-    tTest(df)
+    print('First hypothesis: ')
+    tTest(df, 'elec_bin_group', 'gas_bin_group')
+
+    print('Second hypothesis: ')
+    tTest(df, 'elec_score', 'gas_score')
+
+    # Linear regression
+    # linearRegression(elec_df)
+    # linearRegression(gas_df)
 
     # Classfiers
-    print('\nClassfier for Elec Dataframe: ')
-    predictByClassfiers(elec_df)
+    # print('\nClassfier for Elec Dataframe: ')
+    # predictByClassfiers(elec_df)
     print('\nClassfier for Gas Dataframe: ')
     predictByClassfiers(gas_df)
 
