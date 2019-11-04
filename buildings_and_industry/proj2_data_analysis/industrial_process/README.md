@@ -10,7 +10,15 @@
 * Project2_Report_Industrial.pdf: Contains answers, records, and explain to the project 2. If you want to check more details, please see print-out info from each py files.
 
 ## Analysis Folder
-* run.sh: Running shell script to run py files by the order sequence.
+* run.sh: Running shell script to run py files by the order sequence. Run all py files in this order.
+Windows Command:
+```bash
+$run.sh
+```
+Linux Commands:
+```bash
+$./run.sh
+```
 
 ### Exploratory Analysis
 
