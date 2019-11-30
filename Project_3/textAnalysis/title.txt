@@ -1,0 +1,115 @@
+Coping with residential electricity demand in India’s future _ How much can efficiency achieve? 
+A bottom-up bayesian extension for long term electricity consumption forecasting 
+A hybrid approach to model and forecast the electricity consumption by NeuroWavelet and ARIMAX-GARCH models 
+A Hybrid Fuzzy Regression - SSA Approach for Electricity Consumption Optimisation 
+A multidimensional measure of energy poverty in China and its impacts on health: An empirical study based on the China family panel studies 
+BrOx cycle: A novel process for CO2-free energy production from natural gas 
+A study of appliance ownership and electricity consumption determinants in urban Ghanaian households 
+Abnormal Electricity Consumption Detection from Incomplete Records in Power System 
+AIR CONDITIONING SYSTEM FOR A BUILDING HAVING CONTROL BOX RECEIVING ORDERS TO CURTAIL CONSUMPTION OF ELECTRICITY FROM EXTERNAL AGGREGATOR
+Algorithmic analysis of intelligent electricity meter data for reduction of T energy consumption and carbon emission 
+An Efficient Approach for Flattening the Electricity Consumption Profile at Small and Medium Enterprises 
+An integrated multi-scale approach to assess the performance of energy systems illustrated with data from the Brazilian oil and natural gas sector 
+An occupancy-based model for building electricity consumption prediction: A case study of three campus buildings in Tianjin 
+AN OUTLIER DETECTION METHOD OF LOW-VOLTAGE USERS BASED ON WEEKLY ELECTRICITY CONSUMPTION 
+An overview of energy planning in Iran and transition pathways towards T sustainable electricity supply sector 
+Analysis of Electricity Consumption and Kinetic Energy Index in Fujian 
+Analysis of electricity consumption in China (1990e2016) using index decomposition and decoupling approach 
+Analytical Methodology of Monthly Residential Building Electricity Consumption Based on Data Mining Models 
+Blockchain Electricity Trading Under Demurrage 
+"Calculation of tourist sector electricity consumption and its cost in subsidised insular electrical systems: The case of the Canary Islands, Spain "
+"Climate change and residential electricity consumption in the Yangtze River Delta, China "
+Coal-based synthetic natural gas vs. imported natural gas in China: a net energy perspective 
+Cold energy utilization of liquefied natural gas for capturing carbon dioxide in the flue gas from the magnesite processing industry 
+Comparing consumer perceptions of appliances’ electricity use to appliances’ actual direct-metered consumption 
+Comprehensive method of natural gas pipeline efficiency evaluation based on energy and big data analysis 
+Conventional and energy level based exergoeconomic analysis of biomass T and natural gas fired polygeneration system integrated with ground source heat pump and PEM electrolyzer 
+Day-ahead electricity consumption optimization algorithms for smart homes 
+Decarbonizing Electricity Generation with Intermittent Sources of Energy 
+Deep eutectic solvents for CO2 capture from natural gas by energy and exergy analyses 
+"Deep seawater intake for primary cooling in tropical offshore processing of natural gas with high carbon dioxide content: Energy, emissions and economic assessments "
+Demand for Electricity in a Poor Economy 
+Differentiated effects of diversified technological sources on China’s electricity consumption: Evidence from the perspective of rebound effect 
+Does electricity price matter for innovation in renewable energy technologies in China? 
+Does line loss broaden the deviation between the added value of industry and the industrial electricity consumption in China? 
+Dynamic simulation and techno-economic analysis of a concentrated solar power (CSP) plant hybridized with both thermal energy storage and natural gas 
+E-ring: A Non-Invasive Electricity Consumption Monitoring System 
+Economic and environmental impacts of an integrated-state anaerobic T digestion system to produce compressed natural gas from organic wastes and energy crops 
+Effects of renewable energy sector development on electricity consumption _ Growth nexus in the European Union 
+Electricity Consumption and Economic Growth Nexus in the Republic of Benin
+Electricity Consumption and Economic Growth Nexus: Evidence from Maki Cointegration 
+Electricity Consumption Changes across China’s Provinces Using A Spatial Shift-Share Decomposition Model 
+Electricity Consumption Forecasting using Support Vector Regression with the Mixture Maximum Correntropy Criterion 
+Electricity consumption probability density forecasting method based on LASSO-Quantile Regression Neural Network 
+"Empirical Analysis of Electricity Consumption, CO2 Emissions and Economic Growth: Evidence from Cameroon "
+Enabling utility-scale electrical energy storage by a power-to-gas energy hub and underground storage of hydrogen and natural gas 
+Energy and exergy analysis of reciprocating natural gas expansion engine based on valve configurations 
+Energy consumption of cryptocurrency mining: A study of electricity consumption in mining cryptocurrencies 
+"Energy requirements, GHG emissions and investment costs in natural gas sweetening processes "
+Energy transition and path creation for natural gas in the Brazilian electricity mix 
+Energy exergy and economic analyses of two modified and optimized small- T scale natural gas liquefaction (LNG) cycles using N2 and N2/CH4 refrigerants with CO2 precooling 
+Evaluating and Increasing the Renewable Energy Share of Customers’ Electricity Consumption 
+Evaluation of lifestyle factors including people’s values affecting electricity consumption in homes 
+Exergoeconomic analysis and multi objective optimization of performance of a Carbon dioxide power cycle driven by geothermal energy with liquefied natural gas as its heat sink 
+Flexible energy harvesting from natural gas distribution networks through T line-bagging 
+Flexible integration of liquid air energy storage with liquefied natural gas T regasification for power generation enhancement 
+Gas_liquid dual-expander natural gas liquefaction process with confirmation of biogeography-based energy and cost savings 
+Heterogeneity in German Residential Electricity Consumption: A quantile regression approach 
+High efficiency SNG production from biomass and electricity by integrating gasification with pressurized solid oxide electrolysis cells 
+Impacts of self_generation and self_consumption on German household electricity prices 
+Improvement of inverse change-point modeling of electricity consumption in residential buildings across multiple climate zones 
+Incremental Electricity Consumer Behavior Learning Using Smart Meter Data 
+Influences of natural gas energy fraction on combustion and emission T characteristics of a diesel pilot ignition natural gas engine based on a reduced chemical kinetic model
+Integrated process for synthetic natural gas production from coal and coke-oven gas with high energy efficiency and low emission 
+Integrated unit commitment and natural gas network operational planning T under renewable generation uncertainty 
+"Integration of vertical ground-coupled heat pump into a conventional natural gas pressure drop station: Energy, economic and CO2 emission assessment "
+Interpretable multiple data streams clustering with clipped streams representation for the improvement of electricity consumption forecasting 
+Investigating structural and occupant drivers of annual residential electricity consumption using regularization in regression models 
+Investigation of Rotors Imitating Bird Wings to Reduce Electricity Consumption of HORNET 
+Linear Regression Electricity Prediction Method Based on Clustering of Electric Characteristics 
+Long-term electricity consumption forecasting based on expert prediction and fuzzy Bayesian theory 
+Long-term projections of the hourly electricity consumption in Danish municipalities 
+Low temperature techniques for natural gas purification and LNG production: An energy and exergy analysis 
+"Mapping the winds of whole system reconfiguration: Analysing low-carbon T transformations across production, distribution and consumption in the UK electricity system (1990_2016) "
+Matching intermittency and electricity storage characteristics through time scale analysis: an energy return on investment comparison 
+Metropolitan Evidence Regarding Small Commercial and Industrial Electricity Consumption 
+Minimizing power consumption of boil off gas (BOG) recondensation process by power generation using cold energy in liquefied natural gas (LNG) regasification process 
+Model for forecasting residential heat demand based on natural gas consumption and energy performance indicators 
+Monthly electricity consumption forecasting by the fruit fly optimization algorithm enhanced Holt-Winters smoothing method 
+Multi-scale energy systems engineering for optimal natural gas utilization 
+Natural gas as a bridge to sustainability: Infrastructure expansion regarding energy security and system transition 
+Neural Network with Extended Input for Estimating Electricity Consumption Using Background-based Data Generation
+Neuro-fuzzy mid-term forecasting of electricity consumption using meteorological data 
+Non-intrusive Electricity Sub-metering in Selected Households in Qatar 
+North American natural gas and energy markets in transition: insights from global models 
+Novel retrofit designs using a modified coordinate descent methodology for improving energy efficiency of natural gas liquid fractionation process 
+Numerical study of mixed working fluid in an original oxy-fuel power plant utilizing liquefied natural gas cold energy 
+"Optimal Energy Flow Calculation of Combined Natural Gas, Cooling, Heating and Power Joint Supply Park Microgrid "
+Optimization for energy-efficient flexible flow shop scheduling under time of use electricity tariffs
+Optimization of household energy consumption towards day-ahead retail electricity price in home energy management systems 
+"Optimization of the integration among traditional fossil fuels, clean energies, renewable sources, and energy storages: An MILP model for the coupled electric power, hydraulic, and natural gas systems "
+Performance analysis of vaporizer tube with thermoelectric generator T applied to cold energy recovery of liquefied natural gas 
+Policy considerations for limiting electricity theft in the developing countries 
+Predicting sectoral electricity consumption based on complex network analysis 
+"Protonic ceramic electrochemical cells for hydrogen production and electricity generation: exceptional reversibility, stability, and demonstrated faradaic efficiency"
+Quantifying the influence of wind power and photovoltaic on future T electricity market prices 
+Real-time carbon accounting method for the European electricity markets 
+Reduction of efficiency penalty for a natural gas combined cycle power plant with post-combustion CO2 capture: Integration of liquid natural gas cold energy 
+Research on Relationship Between Rural Residents' Income and Electricity Consumption Features 
+Residential electricity demand in Taiwan: Consumption behavior and rebound effect 
+Review of natural gas hydrates as an energy resource: Prospects and challenges 
+Revisiting the economic growth and electricity consumption nexus in Pakistan 
+Simplified Neural Network Model Design with Sensitivity Analysis and Electricity Consumption Prediction in a Commercial Building 
+Spatiotemporal Dynamics of Electricity Consumption in China 
+Steady-state analysis of the integrated natural gas and electric power system with bi-directional energy conversion 
+Study of the influence mechanism of China's electricity consumption based on multi-period ST-LMDI model 
+Study on the Construction of an Urban Liquefied Natural Gas Bus and Its Cold Energy Recovery 
+Testing for crowd out in social nudges: Evidence from a natural field experiment in the market for electricity 
+The chiller’s electricity consumption simulation by considering the demand response program in power system 
+The Impact of 900VA Electricity Tariff Adjustment on Household Consumption 
+The impacts of shale natural gas energy development on outdoor recreation: A statewide assessment of pennsylvanians 
+Thermodynamic analysis and optimization of a waste heat recovery system for proton exchange membrane fuel cell using transcritical carbon dioxide cycle and cold energy of liquefied natural gas 
+Co-electrolysis of CO2 and glycerol as a pathway to carbon chemicals with improved technoeconomics due to low electricity consumption 
+Transient natural gas liquefaction and its application to CCC-ES (energy storage with cryogenic carbon captureTM)
+VARIABLE REFRIGERANT FLOW SYSTEM WITH ELECTRICITY CONSUMPTION APPORTIONMENT 
+What is Currently Driving the Growth of China’s Household Electricity Consumption? a Clustering and Decomposition Analysis 
