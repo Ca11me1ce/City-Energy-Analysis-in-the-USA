@@ -47,7 +47,7 @@ def insertState(myData):
 
 def getCommonAttrs(df0):
     # Extract the useful attributes in cleaned_commercial.csv files.
-    df = pd.read_csv("../collect_and_clean_data/cleaned_commercial.csv", sep=',', encoding='latin1')
+    df = pd.read_csv("../../electricity_and_natural_gas/collect_and_clean_data/cleaned_commercial.csv", sep=',', encoding='latin1')
     df.drop(['elec_1kdollars_bin_min', 'elec_1kdollars_bin_max', 'elec_mwh_bin_min', 'elec_mwh_bin_max', 'gas_1kdollars_bin_min', 'gas_1kdollars_bin_max', 'gas_mcf_bin_min', 'gas_mcf_bin_max', 'elec_min_lb_ghg', 'elec_max_lb_ghg', 'gas_min_lb_ghg', 'gas_max_lb_ghg'], axis = 1, inplace = True)
     df = pd.merge(df, df0, how = 'left', on = 'zip', right_index = False)
     df.drop(['zip'], axis = 1, inplace = True)
@@ -56,7 +56,7 @@ def getCommonAttrs(df0):
     df = df.groupby(['state_id', 'city']).sum()
     df.to_csv("common_attrs_commercial.csv")
     # Extract the useful attributes in cleaned_commercial.csv files.
-    df = pd.read_csv("../collect_and_clean_data/cleaned_industrial.csv", sep=',', encoding='latin1')
+    df = pd.read_csv("../../electricity_and_natural_gas/collect_and_clean_data/cleaned_industrial.csv", sep=',', encoding='latin1')
     df.drop(['elec_1kdollars_bin_min', 'elec_1kdollars_bin_max', 'elec_mwh_bin_min', 'elec_mwh_bin_max', 'gas_1kdollars_bin_min', 'gas_1kdollars_bin_max', 'gas_mcf_bin_min', 'gas_mcf_bin_max', 'elec_min_lb_ghg', 'elec_max_lb_ghg', 'gas_min_lb_ghg', 'gas_max_lb_ghg'], axis = 1, inplace = True)
     df = pd.merge(df, df0, how = 'left', on = 'zip', right_index = False)
     df.drop(['zip'], axis = 1, inplace = True)
