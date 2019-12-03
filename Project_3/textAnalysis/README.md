@@ -31,3 +31,15 @@ Topic #6: gas fuel production natural expander
 Topic #7: energy electricity gas power storage
 Topic #8: consumption electricity energy data model
 Topic #9: energy gas natural efficiency process 
+
+According to the textual content, top 10 related topics are:
+Topic #0: gas energy natural power based
+Topic #1: energy ng fraction urban combustion
+Topic #2: consumption electricity lng bog energy
+Topic #3: electricity consumption energy building appliances
+Topic #4: gas energy natural models demand
+Topic #5: electricity data consumption clustering patterns
+Topic #6: electricity energy consumption model renewable
+Topic #7: cost rate efficiency exergy product
+Topic #8: consumption electricity energy data co2
+Topic #9: energy gas natural efficiency process
