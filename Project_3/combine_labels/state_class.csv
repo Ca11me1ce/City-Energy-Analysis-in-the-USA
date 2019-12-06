@@ -1,0 +1,52 @@
+state_abbr,r_elec_class,r_gas_class,c_elec_class,c_gas_class,i_elec_class,i_gas_class
+AK,Normal,Normal,Normal,Normal,High,Normal
+AL,Normal,Normal,null,null,null,null
+AR,Normal,Normal,Normal,Normal,High,Normal
+AZ,Very High,Normal,High,Normal,High,Normal
+CA,Very High,Normal,Normal,Normal,High,High
+CO,Normal,Normal,Normal,Normal,Normal,Normal
+CT,High,Normal,High,Normal,High,High
+DC,Very High,Very High,Normal,Normal,High,High
+DE,Normal,Normal,High,Normal,High,High
+FL,Very High,Normal,null,null,null,null
+GA,Normal,Normal,Normal,Normal,High,High
+HI,Very High,Normal,Normal,Normal,Normal,Very High
+IA,Normal,Normal,Normal,Normal,High,High
+ID,Normal,Normal,Normal,Normal,Normal,Normal
+IL,Normal,Normal,Normal,Normal,High,High
+IN,Normal,Normal,Normal,Normal,High,High
+KS,Normal,Normal,Normal,Normal,Normal,Normal
+KY,Normal,Normal,High,Normal,High,Normal
+LA,Normal,Normal,Normal,Normal,High,High
+MA,Normal,Normal,High,Normal,High,Normal
+MD,Normal,Normal,Normal,Normal,Normal,Normal
+ME,Normal,Normal,Normal,Normal,Normal,Normal
+MI,Normal,Normal,Normal,Normal,High,High
+MN,Normal,Normal,Normal,Normal,Normal,High
+MO,Normal,Normal,Normal,Normal,Normal,Normal
+MS,Normal,Normal,Normal,Normal,High,High
+MT,Normal,Normal,Normal,Normal,High,Normal
+NC,Normal,Normal,null,null,null,null
+ND,Normal,Normal,Normal,Normal,Very High,Normal
+NE,Normal,Normal,Normal,Normal,High,High
+NH,Normal,Normal,Normal,Normal,Normal,Normal
+NJ,Normal,Normal,High,Normal,Normal,Normal
+NM,Normal,Normal,Normal,Normal,Normal,Normal
+NV,Very High,Very High,Very High,Normal,Normal,High
+NY,Normal,Normal,Normal,Normal,Normal,Normal
+OH,Normal,Normal,Normal,Normal,High,High
+OK,Normal,Normal,Normal,Normal,Normal,High
+OR,Normal,Normal,Normal,Normal,High,Normal
+PA,Normal,Normal,Normal,Normal,High,Normal
+RI,High,Normal,High,Normal,Normal,High
+SC,Normal,Normal,null,null,null,null
+SD,Normal,Normal,Normal,Normal,Normal,Normal
+TN,Normal,Normal,Normal,Normal,High,High
+TX,Normal,Normal,Normal,Normal,High,High
+UT,Normal,Normal,Normal,Normal,Normal,Normal
+VA,Very High,Normal,High,Normal,Normal,Normal
+VT,Normal,Normal,Normal,Normal,Normal,Normal
+WA,Very High,Normal,High,Normal,High,Normal
+WI,Normal,Normal,Normal,Normal,High,High
+WV,Normal,Normal,null,null,null,null
+WY,Normal,Normal,Normal,Normal,Very High,High
