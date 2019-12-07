@@ -6,40 +6,25 @@ We collected recent academic papers in google scholar and CNKI according to the 
 
 # Implement
 
-Because encoding problem, I cannot directly open pdf files and identify the textual contents. I extracted the titles and abstrcts of these papers and stored them in title.txt and abstract.txt individually. The method to find the most prevalent topics is LDA (Latent Dirchlet Allocation). 
-
-According to the titles, top 10 related topics are:
-Topic #0: scale multi future market utilization
-Topic #1: consumption electricity study approach model
-Topic #2: energy electricity analysis natural gas
-Topic #3: electricity consumption energy based analysis
-Topic #4: gas natural energy consumption electricity
-Topic #5: consumption electricity residential china regression
-Topic #6: electricity energy natural gas consumption
-Topic #7: gas energy natural electricity consumption
-Topic #8: electricity production generation low efficiency
-Topic #9: consumption electricity term forecasting long
-
-According to the abstracts, top 10 related topics are:
-Topic #0: gas energy electricity based natural
-Topic #1: consumption electricity energy forecasting model
-Topic #2: electricity consumption temperature carbon load
-Topic #3: electricity consumption economic energy emissions
-Topic #4: consumption growth electricity energy sgd
-Topic #5: electricity gas power energy exergy
-Topic #6: gas fuel production natural expander
-Topic #7: energy electricity gas power storage
-Topic #8: consumption electricity energy data model
-Topic #9: energy gas natural efficiency process 
+Because encoding problem, I cannot directly open pdf files and identify the textual contents. I extracted the textual contents of these papers into text.txt. The method to find the most prevalent topics is LDA (Latent Dirchlet Allocation). 
 
 According to the textual content, top 10 related topics are:
-Topic #0: gas energy natural power based
-Topic #1: energy ng fraction urban combustion
-Topic #2: consumption electricity lng bog energy
-Topic #3: electricity consumption energy building appliances
-Topic #4: gas energy natural models demand
-Topic #5: electricity data consumption clustering patterns
-Topic #6: electricity energy consumption model renewable
-Topic #7: cost rate efficiency exergy product
-Topic #8: consumption electricity energy data co2
-Topic #9: energy gas natural efficiency process
+Topic #0: gas energy natural power based electricity storage efficiency plant proposed
+
+Topic #1: energy ng fraction urban combustion bus emission natural gas increases
+
+Topic #2: consumption electricity lng bog energy laes power process storage cold
+
+Topic #3: electricity consumption energy building appliances household residential results use demand
+
+Topic #4: gas energy natural models demand electricity storage consumption using model
+
+Topic #5: electricity data consumption clustering patterns load mining grid new analysis
+
+Topic #6: electricity energy consumption model renewable china data gas economic based
+
+Topic #7: cost rate efficiency exergy product analysis sng technique process cycle
+
+Topic #8: consumption electricity energy data co2 analysis growth gas power demand
+
+Topic #9: energy gas natural efficiency process co2 consumption economic liquefaction pipeline
