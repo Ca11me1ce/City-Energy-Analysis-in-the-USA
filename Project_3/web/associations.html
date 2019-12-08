@@ -67,7 +67,7 @@
                 <ul class="site-menu main-menu js-clone-nav ml-auto d-none d-lg-block">
                   
                   <li><a href="analysis.html" class="nav-link">Analysis</a></li>
-                  <li><a href="ethical.html" class="nav-link">Ethical</a></li>
+                  <li><a href="ethical.html" class="nav-link">Ethics</a></li>
                   <li><a href="conclusions.html" class="nav-link">Conclusion</a></li>
                   <li><a href="future.html" class="nav-link">Future</a></li>
                 </ul>
@@ -91,6 +91,7 @@
             <!-- <div class="row"> -->
               <!-- <div class="col-md-5"> -->
                 <h2 class="heading-39291">Association Rules / Frequent Itemset Mining Analysis</h2>
+                <p>Association rules mining is to find items that frequently occur together in the same transactions, it’s useful to find co-occurrence relationships in the dataset. </p>
                 <p>For the residential dataset, the subset contains 3 columns – ‘state_id’, ‘elec_degree’, ‘gas_degree’. Before calling the Apriori algorithm to calculate support, some transformation is necessary. Because the degree of electricity and gas are both 1 to 5. If using the raw subset to calculate, the algorithm would regard two attributes the same. Therefore, it is necessary to transform the two attributes into a string type. For example,</p>
                 <div><img src="images/ar1.png" alt="Image" class="img-fluid"><p></p></div>
 
@@ -132,10 +133,13 @@
                 <div><img src="images/ar12.png" alt="Image" class="img-fluid"><p></p></div>
                 <p>When min_support = 0.05</p>
                 <div><img src="images/ar13.png" alt="Image" class="img-fluid"><p></p></div>
+                <div><img src="images/ar13_1.png" alt="Image" class="img-fluid"><p></p></div>
                 <p>When min_support = 0.1</p>
                 <div><img src="images/ar14.png" alt="Image" class="img-fluid"><p></p></div>
+                <div><img src="images/ar14_1.png" alt="Image" class="img-fluid"><p></p></div>
                 <p>When min_support = 0.3</p>
                 <div><img src="images/ar15.png" alt="Image" class="img-fluid"><p></p></div>
+                <div><img src="images/ar15_1.png" alt="Image" class="img-fluid"><p></p></div>
                 <p>The (elec_class_normal, gas_class_normal) are most frequent. This result is not surprising, because the industrial usage amounts of most cities are always normal in the USA. The heavy industry city is few in the USA.</p>
                 
                 
@@ -159,8 +163,7 @@
                     <div class="col-md-4 ml-auto">
                       <h2 class="footer-heading mb-4">Features</h2>
                       <ul class="list-unstyled">
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="http://chenyang.georgetown.domains/contact.html">Contact Us</a></li>
                       </ul>
                     </div>
       
@@ -173,10 +176,10 @@
       
                   <h2 class="footer-heading mb-4">Follow Us</h2>
                   
-                  <a href="#" class="pl-3 pr-3"><span class="icon-web"></span></a>
-                  <a href="#" class="pl-3 pr-3"><span class="icon-github"></span></a>
-                  <a href="#" class="pl-3 pr-3"><span class="icon-facebook"></span></a>
-                  <a href="#" class="pl-3 pr-3"><span class="icon-linkedin"></span></a>
+                  <a href="http://chenyang.georgetown.domains/index.html" class="pl-3 pr-3"><span class="icon-web"></span></a>
+                  <a href="https://github.com/Ca11me1ce" class="pl-3 pr-3"><span class="icon-github"></span></a>
+                  <a href="https://www.facebook.com/yang.chen.3576" class="pl-3 pr-3"><span class="icon-facebook"></span></a>
+                  <a href="https://www.linkedin.com/in/yangchen1995/" class="pl-3 pr-3"><span class="icon-linkedin"></span></a>
                   </form>
                 </div>
               </div>

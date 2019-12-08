@@ -67,7 +67,7 @@
                 <ul class="site-menu main-menu js-clone-nav ml-auto d-none d-lg-block">
                   
                   <li><a href="analysis.html" class="nav-link">Analysis</a></li>
-                  <li><a href="ethical.html" class="nav-link">Ethical</a></li>
+                  <li><a href="ethical.html" class="nav-link">Ethics</a></li>
                   <li><a href="conclusions.html" class="nav-link">Conclusion</a></li>
                   <li><a href="future.html" class="nav-link">Future</a></li>
                 </ul>
@@ -91,7 +91,10 @@
             <!-- <div class="row"> -->
               <!-- <div class="col-md-5"> -->
                 <h2 class="heading-39291">Data Collection</h2>
-                <p>We collected three datasets from <a href="https://developer.nrel.gov/docs/cleap/">Developer Network.</a></p>
+                <p>The data source is coming from the <a href="https://www.nrel.gov/index.html">National Renewable Energy Laboratory (NREL)</a>. They focus on creative answers to today's energy challenges. From breakthroughs in fundamental science to new clean technologies to integrated energy systems that power our lives, NREL researchers are transforming the way the nation and the world use energy.</p>
+                <p>The data sets are focusing on the field of the usage amount of electricity and natural gas in cities of the USA. The <a href="https://developer.nrel.gov/docs/cleap/">City Energy Data APIs</a> from NREL that are powerful and integrated API functions to obtain marketing energy data about electricity and natural gas. Access energy market data for cities and states related to buildings and industry, electricity and natural gas, and transportation. They can query energy data by zipcodes, city names and states.</p>
+                <p><img src="images/apis.png" alt="Image" class="img-fluid"></p>
+    
                 <h2 class="heading-39291">Electricity and Natural Gas Dataset</h2>
                 <div><img src="images/do1.png" alt="Image" class="img-fluid"></div>
                 <p>For electricity and natural gas energy data, there are three classifications: residential, commercial, and industrial. These data are all necessary for this project. Because the goal of this project is to obtain a detailed view of how energy consumption occurs in most fields of our daily life. There are 24 attributes in all residential, commercial and industrial data:</p>
@@ -171,6 +174,12 @@
                 <p>Therefore, many statistical data can be gotten, such as the ranking of electricity expenditure per housing unit, electricity expenditure per capita, and greenhouse gas emissions. It is available to locate some cities where energy consumption is higher than others. There might be ought to strengthen measurements of saving energy. Besides, to predict the potential cities with high energy consumption and take measures to save energy is also meaningful. To predict, there should be more historic data to collect in different years to analyze the change tendency. </p>
                 <p>Besides, the error – “NOT FOUND” occurs when requesting json data using a zip code. Solution: detect the error code returned by the request, and save the data information in the csv files only when the errors are empty. </p>
                 <p>Sometimes, we cannot request json file. For some zip codes, it blocks or fails when I request the relevant json file. I set a conditional statement to ignore these special zip codes. </p>
+
+                <p>Final, the data is separated and wrangled to three main datasets and some minor datasets. The total usage amount of electricity and natural gas of each state is calculated so that that can more intuitively express the characteristics of our data.</p>
+                <p>Residential Dataset: <a href="d3_residential_electricity.html">Electricity</a> and <a href="d3_residential_gas.html">Natural Gas</a>.</p>
+                <p>Commercial Dataset: <a href="d3_commercial_electricity.html">Electricity</a> and <a href="d3_commercial_gas.html">Natural Gas</a>.</p>
+                <p>Industrial Dataset: <a href="d3_industrial_electricuty.html">Electricity</a> and <a href="d3_industrial_gas.html">Natural Gas</a>.</p>
+                <p>The data details are provided to access and download, please click the button below. More data information, please check the project <a href="https://github.com/Ca11me1ce/Georgetown-University-COCS587-Data-Analytics-Project">GitHub</a>.</p>
                 
     
                  <p class="mb-0"><a href="export_csv.html" class="btn btn-primary rounded-0">Our Data</a></p>
@@ -193,8 +202,7 @@
                     <div class="col-md-4 ml-auto">
                       <h2 class="footer-heading mb-4">Features</h2>
                       <ul class="list-unstyled">
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="http://chenyang.georgetown.domains/contact.html">Contact Us</a></li>
                       </ul>
                     </div>
       
@@ -207,10 +215,10 @@
       
                   <h2 class="footer-heading mb-4">Follow Us</h2>
                   
-                  <a href="#" class="pl-3 pr-3"><span class="icon-web"></span></a>
-                  <a href="#" class="pl-3 pr-3"><span class="icon-github"></span></a>
-                  <a href="#" class="pl-3 pr-3"><span class="icon-facebook"></span></a>
-                  <a href="#" class="pl-3 pr-3"><span class="icon-linkedin"></span></a>
+                  <a href="http://chenyang.georgetown.domains/index.html" class="pl-3 pr-3"><span class="icon-web"></span></a>
+                  <a href="https://github.com/Ca11me1ce" class="pl-3 pr-3"><span class="icon-github"></span></a>
+                  <a href="https://www.facebook.com/yang.chen.3576" class="pl-3 pr-3"><span class="icon-facebook"></span></a>
+                  <a href="https://www.linkedin.com/in/yangchen1995/" class="pl-3 pr-3"><span class="icon-linkedin"></span></a>
                   </form>
                 </div>
               </div>
