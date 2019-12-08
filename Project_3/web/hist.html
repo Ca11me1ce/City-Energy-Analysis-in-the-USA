@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>COSC 587 Data Analytics &mdash; City Energy Analysis Project</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=DM+Sans:300,400,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+    <link rel="stylesheet" href="css/aos.css">
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+  </head>
+
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+
+    
+    <div class="site-wrap" id="home-section">
+
+      <div class="site-mobile-menu site-navbar-target">
+        <div class="site-mobile-menu-header">
+          <div class="site-mobile-menu-close mt-3">
+            <span class="icon-close2 js-menu-toggle"></span>
+          </div>
+        </div>
+        <div class="site-mobile-menu-body"></div>
+      </div>
+
+
+
+      <header class="site-navbar site-navbar-target bg-white" role="banner">
+
+        <div class="container">
+          <div class="row align-items-center position-relative">
+
+            <div class="col-lg-4">
+              <nav class="site-navigation text-right ml-auto " role="navigation">
+                <ul class="site-menu main-menu js-clone-nav ml-auto d-none d-lg-block">
+                  <li class="active"><a href="index.html" class="nav-link">Home</a></li>
+                  <li><a href="intro.html" class="nav-link">Intro</a></li>
+                  <li><a href="overviews.html" class="nav-link">Overviews</a></li>
+                  <li><a href="preprocess.html" class="nav-link">Preprocess</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="col-lg-4 text-center">
+              <div class="site-logo">
+                <a href="index.html">City Energy Analysis</a>
+              </div>
+
+
+              <div class="ml-auto toggle-button d-inline-block d-lg-none"><a href="#" class="site-menu-toggle py-5 js-menu-toggle text-white"><span class="icon-menu h3 text-primary"></span></a></div>
+            </div>
+            <div class="col-lg-4">
+              <nav class="site-navigation text-left mr-auto " role="navigation">
+                <ul class="site-menu main-menu js-clone-nav ml-auto d-none d-lg-block">
+                  
+                  <li><a href="analysis.html" class="nav-link">Analysis</a></li>
+                  <li><a href="ethical.html" class="nav-link">Ethical</a></li>
+                  <li><a href="conclusions.html" class="nav-link">Conclusion</a></li>
+                  <li><a href="future.html" class="nav-link">Future</a></li>
+                </ul>
+              </nav>
+            </div>
+            
+
+          </div>
+        </div>
+
+      </header>
+      
+      <hr/>
+
+    
+
+
+      <div class="site-section">
+          <div class="container">
+            
+            <!-- <div class="row"> -->
+              <!-- <div class="col-md-5"> -->
+                <h2 class="heading-39291">Histograms and Correlations </h2>
+                <p>For residential dataset, the histograms contains 4 variables – ‘housing_units’, ‘total_pop’, ’ ‘elec_mwh’, ‘gas_mcf’. These variables all have a similar distribution and are all skewed right. The reason is that ‘housing_units’ and ‘total_pop’ are positively correlated with ‘elec_mwh’ and ‘gas_mcf’. </p>
+                <div><img src="images/hc1.png" alt="Image" class="img-fluid"></div>
+                <p>Here is the table of correlations between the 4 residential variables. </p>
+                <div><img src="images/hc2.png" alt="Image" class="img-fluid"></div>
+
+                <p>This table shows that ‘housing_units’ and ‘total_pop’ are both strong positive correlated to ‘elec_mwh’ and ‘gas_mcf’. This means the amount of housing and population is strong positive correlated to energy consumptions. Besides, the correlation between housing and population is also strongly positive. This is obvious.  However, the correlation between ‘elec_mwh’ and ‘gas_mcf’ is not as strong as others. This is reasonable that a city whose electricity consumption is high level may not be a city whose natural gas consumption is also a high level.</p>
+                <p>Here is a set of scatterplot subplots of residential energy data. It also shows the same patter as the correlation matrix. </p>
+                <div><img src="images/hc3.png" alt="Image" class="img-fluid"></div>
+                
+                <p>For the commercial dataset, 9 attributes are selected to plot the histograms: 'elec_score', 'gas_score', 'num_establishments', 'elec_1kdollars', 'elec_mwh', 'gas_1kdollars', 'gas_mcf', 'elec_lb_ghg', 'gas_lb_ghg'. The result is shown below:</p>
+                <div><img src="images/hc4.png" alt="Image" class="img-fluid"></div>
+
+                <p>From this result, all attributes’ histograms are left-skewed, which indicates that although the data already handled the maximum value before, there are still have many huge numbers in it. it is acceptable because some cities can have high-level energy usage and it is an exact problem this project wants to analyze and predict.</p>
+                <p>Three attributes are selected: elec_1ldollars, elec_mwh, and elec_lb_ghg. And I draw a set of scatter plots to show these attributes relationship.</p>
+                <div><img src="images/hc5.png" alt="Image" class="img-fluid"></div>
+                <p>From the result, these attributes are related to each other because their scatter plot is not randomly distributed. In the contrary，their points are dense into multiple straight lines of emission patterns. It may indicate that the three attributes may have multiple linear correlations.</p>
+
+                <p>For the industrial dataset, the histograms containing all features. These variables all have a similar distribution and are all skewed right except bin groups. The reason is that all other features are positively correlated with elec_mwh and elec_lb_ghg.</p>
+                <div><img src="images/hc6.png" alt="Image" class="img-fluid"></div>
+                <p>elec_lb_ghg, elec_mwh, and elec_1kdollars are identified for finding the correlation.</p>
+                <div><img src="images/hc7.png" alt="Image" class="img-fluid"></div>
+
+                <p>This table shows that elec_1kdollars is weakly correlated to elec_mwh and elec_1kdollars. but the correlation between elec_mwh and elec_lb_ghg is a strong positive. This is reasonable that the industry uses the most consumption of energy is either electricity or natural gas. And the set of scatter plot subplots is provided. It also shows the same pattern as the correlation matrix.</p>
+                <div><img src="images/hc8.png" alt="Image" class="img-fluid"></div>
+
+
+
+           
+                
+                 <p class="mb-0"><a href="cluster.html" class="btn btn-primary rounded-0">Cluster Analysis</a></p>
+              
+          </div>
+        </div>
+
+
+
+    
+        <footer class="site-footer">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="row">
+                    <div class="col-md-7">
+                      <h2 class="footer-heading mb-4">COSC 587 Analysis Group</h2>
+                      <p>We The Best</p>
+                    </div>
+                    <div class="col-md-4 ml-auto">
+                      <h2 class="footer-heading mb-4">Features</h2>
+                      <ul class="list-unstyled">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                      </ul>
+                    </div>
+      
+                  </div>
+                </div>
+                <div class="col-md-4 ml-auto">
+      
+                  
+      
+      
+                  <h2 class="footer-heading mb-4">Follow Us</h2>
+                  
+                  <a href="#" class="pl-3 pr-3"><span class="icon-web"></span></a>
+                  <a href="#" class="pl-3 pr-3"><span class="icon-github"></span></a>
+                  <a href="#" class="pl-3 pr-3"><span class="icon-facebook"></span></a>
+                  <a href="#" class="pl-3 pr-3"><span class="icon-linkedin"></span></a>
+                  </form>
+                </div>
+              </div>
+              <div class="row pt-5 mt-5 text-center">
+                <div class="col-md-12">
+                  <div class="pt-5">
+                    <p class="small">
+                  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This website is designed by <a href="https://chenyang.georgetown.domains" target="_blank" >Yang Chen</a>
+                  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                  </p>
+                  </div>
+                </div>
+      
+              </div>
+            </div>
+          </footer>
+      
+          </div>
+      
+          <script src="js/jquery-3.3.1.min.js"></script>
+          <script src="js/popper.min.js"></script>
+          <script src="js/bootstrap.min.js"></script>
+          <script src="js/owl.carousel.min.js"></script>
+          <script src="js/jquery.sticky.js"></script>
+          <script src="js/jquery.waypoints.min.js"></script>
+          <script src="js/jquery.animateNumber.min.js"></script>
+          <script src="js/jquery.fancybox.min.js"></script>
+          <script src="js/jquery.easing.1.3.js"></script>
+          <script src="js/aos.js"></script>
+      
+          <script src="js/main.js"></script>
+      
+      
+        </body>
+      
+      </html>
+      

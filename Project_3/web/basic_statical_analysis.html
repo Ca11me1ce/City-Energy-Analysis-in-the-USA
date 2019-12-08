@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>COSC 587 Data Analytics &mdash; City Energy Analysis Project</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=DM+Sans:300,400,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+    <link rel="stylesheet" href="css/aos.css">
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+  </head>
+
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+
+    
+    <div class="site-wrap" id="home-section">
+
+      <div class="site-mobile-menu site-navbar-target">
+        <div class="site-mobile-menu-header">
+          <div class="site-mobile-menu-close mt-3">
+            <span class="icon-close2 js-menu-toggle"></span>
+          </div>
+        </div>
+        <div class="site-mobile-menu-body"></div>
+      </div>
+
+
+
+      <header class="site-navbar site-navbar-target bg-white" role="banner">
+
+        <div class="container">
+          <div class="row align-items-center position-relative">
+
+            <div class="col-lg-4">
+              <nav class="site-navigation text-right ml-auto " role="navigation">
+                <ul class="site-menu main-menu js-clone-nav ml-auto d-none d-lg-block">
+                  <li class="active"><a href="index.html" class="nav-link">Home</a></li>
+                  <li><a href="intro.html" class="nav-link">Intro</a></li>
+                  <li><a href="overviews.html" class="nav-link">Overviews</a></li>
+                  <li><a href="preprocess.html" class="nav-link">Preprocess</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="col-lg-4 text-center">
+              <div class="site-logo">
+                <a href="index.html">City Energy Analysis</a>
+              </div>
+
+
+              <div class="ml-auto toggle-button d-inline-block d-lg-none"><a href="#" class="site-menu-toggle py-5 js-menu-toggle text-white"><span class="icon-menu h3 text-primary"></span></a></div>
+            </div>
+            <div class="col-lg-4">
+              <nav class="site-navigation text-left mr-auto " role="navigation">
+                <ul class="site-menu main-menu js-clone-nav ml-auto d-none d-lg-block">
+                  
+                  <li><a href="analysis.html" class="nav-link">Analysis</a></li>
+                  <li><a href="ethical.html" class="nav-link">Ethical</a></li>
+                  <li><a href="conclusions.html" class="nav-link">Conclusion</a></li>
+                  <li><a href="future.html" class="nav-link">Future</a></li>
+                </ul>
+              </nav>
+            </div>
+            
+
+          </div>
+        </div>
+
+      </header>
+      
+      <hr/>
+
+    
+
+
+      <div class="site-section">
+          <div class="container">
+            
+            <!-- <div class="row"> -->
+              <!-- <div class="col-md-5"> -->
+                <h2 class="heading-39291">Basic Statistical Analysis - Mean, Median, and Standard Deviation</h2>
+                <p>For the residential dataset, the mean of housing_units attribute represents the average amount of housings in a city. The mean of total_pop attribute represents the average population in a city. The mean of elec_1kdollars attribute represents the average electricity expenditure in a city. The mean of elec_mwh attribute represents the average electricity consumption in a city. The mean of gas_1kdollars attribute represents the average natural gas expenditure in a city. The mean of gas_mcf attribute represents the average gas consumption in a city. The mean of elec_lb_ghg attribute represents the average amount of greenhouse gas produced by electricity in a city. The mean of gas_lb_ghg attribute represents the average amount of greenhouse gas produced by natural gas in a city. </p>
+                <div><img src="images/sa1.png" alt="Image" class="img-fluid"><p></p></div>
+
+                <p>For the commercial dataset, the generated file is named “statistic.csv” to store the result. From the table, I find that each attribute’s difference between mean and median are huge, which indicates that these attributes may have extreme value(outliers) to affect the results. The substantial standard deviation of each attribute can also prove this. </p>
+                <div><img src="images/sa2.png" alt="Image" class="img-fluid"><p></p></div>
+
+                <p>For the industrial dataset, the mean of elec_score attribute represents the mean of the weight of electricity consumption in a city. The mean of gas_score attribute represents the mean of the weight of gas consumption in a city. The mean of num_establishments attribute represents the mean of the number of establishments in a city. The mean of elec_1kdollars attribute represents the mean of electricity expenditure in a city. The mean of elec_mwh attribute represents the mean of electricity consumption in a city. The mean of gas_1kdollars attribute represents the mean of natural gas expenditure in a city. The mean of gas_mcf attribute represents the mean of gas consumption in a city. The mean of elec_lb_ghg attribute represents the mean of total greenhouse gas produced by electricity in a city. The mean of gas_lb_ghg attribute represents the mean of total greenhouse gas produced by natural gas in a city.</p>
+                <div><img src="images/sa3.png" alt="Image" class="img-fluid"><p></p></div>
+
+                <h2 class="heading-39291">Detect outliers</h2>
+                <p>In the residential dataset, although these cities have different scales, it is not reasonable for a city to have totally different values from most cities. The types of ‘housing_units’, ‘total_pop’, ‘elec_1kdollars’, ‘elec_mwh’, ‘gas_1kdollars’, ‘gas_mcf’, ‘elec_lb_ghg’, ‘gas_lb_ghg’ are all continuous numeric. Therefore, it is obvious to use a simple binning method to select the outliers firstly. Divide the range of each attribute into 100 even bins and output the count of each bin. The distributions of all attributes have a same pattern: most attributes gather at the the 1st bins. Thus, the data in other bins should be regarded as outliers. And summing up the counter in outlier bins can calculate the percentage of outliers of each attribute. The percentage shows that the percentage of each attribute is pretty low. Use the maximal value of non-outliers to replace the values of outliers. The outliers would be classified as the very high-level energy consumption in this way. It is reasonable that these outliers have much more energy consumptions than other cities.</p>
+                <p>For the commercial dataset, the statistics of this dataset are recalculated and add more metrics: min, 25%, 50%, 75%, max, range, var (means variance), dis (interquartile range). The result is stored in a file named “statistic_original.csv”. I find that each attribute has vast number: take num_establishment as an example, this attribute’s median is 42, while its mean is about 5 times of its median, and its minimum value is 0 and the first 75% value of it is 145 while its maximum value is 92276, which is a very large number. </p>
+                <div><img src="images/sa4.png" alt="Image" class="img-fluid"><p></p></div>
+                <p>Then, the boxplot is provided to handle these maximum values. In boxplot, the number which greater than 1.5IQR times of the upper quartile or less than 1.5IQR times of the lower quartile will be identified as outliers. And I calculate the number of outliers in each attribute. Here is the result:</p>
+                <div><img src="images/sa5.png" alt="Image" class="img-fluid"><p></p></div>
+
+                <p>Then they are replaced with the attribute corresponding median(calculated in part 1.2). And the statistics of this dataset are re-calculated and get the result, which is stored in a file named “statistic_revised.csv”:</p>
+                <div><img src="images/sa6.png" alt="Image" class="img-fluid"><p></p></div>
+                <p>The value of statistics’ mean, std, max, range, var, dis changed significantly. Take num_establishment as an example, its std value changed from 1382.86 to 73.29, its maximum value changed from 92276 to 344, and its variance value changed from 6.48 to 1.18. In this way,  I handle the maximum value in this dataset and store new dataset into the file named “cleaned_energy_commercial.csv”.</p>
+
+                <p>For the industrial dataset, it did same process</p>
+
+                <h2 class="heading-39291">Binning Data</h2>
+                <p>Two attributes – ‘elec_mwh’ and ‘gas_mcf’ are binned. The reason for binning them is intuitive. Because the labels of energy consumption are based on the electricity consumptions and the natural gas consumptions. And binning them into three even bins also gets the degrees of energy consumptions. For example, the city whose elec_degree is 1 has normal electricity consumption level. There are 3 degrees for electricity and natural gas consumptions individually. </p>
+                <div><img src="images/sa7.png" alt="Image" class="img-fluid"><p></p></div>
+
+                <h2 class="heading-39291">Local Outlier Factor </h2>
+                <p>For the residential dataset, use 3 different k values - [100, 500, 1000] and bin the scores into 10 bins. For different k, the major bin is always the 10th bin. However, the count of data located in the 10th bin changes a little. The 10th bin contains the maximal negative outlier factor whose absolute value is smallest. Therefore, data in the 10th bin are normal data, not outliers. We should abandon data located in other bins. The fraction of outliers is really low. Drop all possible outliers based on the three outlier factor attributes. </p>
+                <p>To compare the above binning method with LOF, bin the two attributes ‘elec_mwh’ and ‘gas_mcf’ into 3 bins and print the counts of all bins. It is obvious that the binning method is more suitable for this data set. </p>
+                <div><img src="images/lof1.png" alt="Image" class="img-fluid"><p></p></div>
+
+                <p>For the commercial dataset, LOF is used to handle high dimensional outliers. The k-values will be 50, 100, and 200. First of all, the contamination is set to 0.1 and get outlier array and its score(generated by negative_outlier_factor_). Some score is -3107757274153480,  and it should be deleted while most of the outliers’ score is about 1.2. It’s not reasonable to delete them all. The scores are dropped, which is lower than the -2. The number of outliers is calculated for each k and the result is shown below:</p>
+                <div><img src="images/lof2.png" alt="Image" class="img-fluid"><p></p></div>
+                <p>The outliers are dropped when k = 200 and generate a new dataset.</p>
+
+                <p>For the industrial dataset, the LOF algorithm is used to detect outliers in this data set. The k-values are 100, 200 and 500 are selected, and bin to k+1 bin. And the LOF is set to 1 to determine outliers.  The k-value=200 is selected as the value to detect outliers because the value is best for the current size of the data set and the distance of every outlier is more densely distributed in the plot. To remove all outliers because the energy data cannot be assigned by personal and the size of the data set is enough to analyze. </p>
+                <p>When k=100: 73 outliers</p>
+                <div><img src="images/lof3.png" alt="Image" class="img-fluid"><p></p></div>
+
+                <p>When k=200: 80 outliers</p>
+                <div><img src="images/lof4.png" alt="Image" class="img-fluid"><p></p></div>
+
+                <p>When k=500: 195 outliers</p>
+                <div><img src="images/lof5.png" alt="Image" class="img-fluid"><p></p></div>
+                <p>After LOF outlier detection and remove outliers, the mean, median, and standard derivation are calculated for the data set. The standard derivation is shrinking a lot.</p>
+                
+                
+                
+                <!-- <p></p>
+                <p></p> -->
+                
+                 <p class="mb-0"><a href="hist.html" class="btn btn-primary rounded-0">Histograms and Correlations </a></p>
+              
+          </div>
+        </div>
+
+
+
+    
+        <footer class="site-footer">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="row">
+                    <div class="col-md-7">
+                      <h2 class="footer-heading mb-4">COSC 587 Analysis Group</h2>
+                      <p>We The Best</p>
+                    </div>
+                    <div class="col-md-4 ml-auto">
+                      <h2 class="footer-heading mb-4">Features</h2>
+                      <ul class="list-unstyled">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                      </ul>
+                    </div>
+      
+                  </div>
+                </div>
+                <div class="col-md-4 ml-auto">
+      
+                  
+      
+      
+                  <h2 class="footer-heading mb-4">Follow Us</h2>
+                  
+                  <a href="#" class="pl-3 pr-3"><span class="icon-web"></span></a>
+                  <a href="#" class="pl-3 pr-3"><span class="icon-github"></span></a>
+                  <a href="#" class="pl-3 pr-3"><span class="icon-facebook"></span></a>
+                  <a href="#" class="pl-3 pr-3"><span class="icon-linkedin"></span></a>
+                  </form>
+                </div>
+              </div>
+              <div class="row pt-5 mt-5 text-center">
+                <div class="col-md-12">
+                  <div class="pt-5">
+                    <p class="small">
+                  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This website is designed by <a href="https://chenyang.georgetown.domains" target="_blank" >Yang Chen</a>
+                  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                  </p>
+                  </div>
+                </div>
+      
+              </div>
+            </div>
+          </footer>
+      
+          </div>
+      
+          <script src="js/jquery-3.3.1.min.js"></script>
+          <script src="js/popper.min.js"></script>
+          <script src="js/bootstrap.min.js"></script>
+          <script src="js/owl.carousel.min.js"></script>
+          <script src="js/jquery.sticky.js"></script>
+          <script src="js/jquery.waypoints.min.js"></script>
+          <script src="js/jquery.animateNumber.min.js"></script>
+          <script src="js/jquery.fancybox.min.js"></script>
+          <script src="js/jquery.easing.1.3.js"></script>
+          <script src="js/aos.js"></script>
+      
+          <script src="js/main.js"></script>
+      
+      
+        </body>
+      
+      </html>
+      

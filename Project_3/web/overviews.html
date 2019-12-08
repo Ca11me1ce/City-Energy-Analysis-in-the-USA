@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>COSC 587 Data Analytics &mdash; City Energy Analysis Project</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=DM+Sans:300,400,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+    <link rel="stylesheet" href="css/aos.css">
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+  </head>
+
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+
+    
+    <div class="site-wrap" id="home-section">
+
+      <div class="site-mobile-menu site-navbar-target">
+        <div class="site-mobile-menu-header">
+          <div class="site-mobile-menu-close mt-3">
+            <span class="icon-close2 js-menu-toggle"></span>
+          </div>
+        </div>
+        <div class="site-mobile-menu-body"></div>
+      </div>
+
+
+
+      <header class="site-navbar site-navbar-target bg-white" role="banner">
+
+        <div class="container">
+          <div class="row align-items-center position-relative">
+
+            <div class="col-lg-4">
+              <nav class="site-navigation text-right ml-auto " role="navigation">
+                <ul class="site-menu main-menu js-clone-nav ml-auto d-none d-lg-block">
+                  <li class="active"><a href="index.html" class="nav-link">Home</a></li>
+                  <li><a href="intro.html" class="nav-link">Intro</a></li>
+                  <li><a href="overviews.html" class="nav-link">Overviews</a></li>
+                  <li><a href="preprocess.html" class="nav-link">Preprocess</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="col-lg-4 text-center">
+              <div class="site-logo">
+                <a href="index.html">City Energy Analysis</a>
+              </div>
+
+
+              <div class="ml-auto toggle-button d-inline-block d-lg-none"><a href="#" class="site-menu-toggle py-5 js-menu-toggle text-white"><span class="icon-menu h3 text-primary"></span></a></div>
+            </div>
+            <div class="col-lg-4">
+              <nav class="site-navigation text-left mr-auto " role="navigation">
+                <ul class="site-menu main-menu js-clone-nav ml-auto d-none d-lg-block">
+                  
+                  <li><a href="analysis.html" class="nav-link">Analysis</a></li>
+                  <li><a href="ethical.html" class="nav-link">Ethical</a></li>
+                  <li><a href="conclusions.html" class="nav-link">Conclusion</a></li>
+                  <li><a href="future.html" class="nav-link">Future</a></li>
+                </ul>
+              </nav>
+            </div>
+            
+
+          </div>
+        </div>
+
+      </header>
+      
+      <hr/>
+
+    
+
+
+      <div class="site-section">
+          <div class="container">
+            
+            <!-- <div class="row"> -->
+              <!-- <div class="col-md-5"> -->
+                <h2 class="heading-39291">Data Collection</h2>
+                <p>We collected three datasets from <a href="https://developer.nrel.gov/docs/cleap/">Developer Network.</a></p>
+                <h2 class="heading-39291">Electricity and Natural Gas Dataset</h2>
+                <div><img src="images/do1.png" alt="Image" class="img-fluid"></div>
+                <p>For electricity and natural gas energy data, there are three classifications: residential, commercial, and industrial. These data are all necessary for this project. Because the goal of this project is to obtain a detailed view of how energy consumption occurs in most fields of our daily life. There are 24 attributes in all residential, commercial and industrial data:</p>
+                <ol>
+                  <li>zip : the zip of the USA </li>
+                  <li>city: the city name of the USA </li>
+                  <li>housing_units: A housing unit is a house, an apartment, a group of rooms, or a single room occupied or intended for occupancy as separate living quarters. </li>
+                  <li>total_pop: total population of the city. </li>
+                  <li>commercial_num_establishments / industrial_num_establishments: the number of commercial establishments or industrial establishments. </li>
+                  <li>residential_elec_1kdollars / commercial_elec_1kdollars / industrial_elec_1kdollars: the expenditures of electricity, and the unit is 1k dollars. </li>
+                  <li>residential_elec_mwh / commercial_elec_mwh / industrial_elec_mwh: the usage of electricity, and the unit is megawatt hour. </li>
+                  <li>residential_gas_1kdollars / commercial_gas_1kdollars / industrial_gas_1kdollars: the expenditures of natural gas, and the unit is 1k dollars. </li>
+                  <li>residential_gas_mcf / commercial_gas_mcf / industrial_gas_mcf: the usage of natural gas, and the unit is 1 thousand cubic feet. </li>
+                  <li>residential_elec_lb_ghg / commercial_elec_lb_ghg / industrial_elec_lb_ghg: the greenhouse gas produced per megawatt hour electricity. </li>
+                  <li>residential_gas_lb_ghg / commercial_gas_lb_ghg / industrial_gas_lb_ghg: the greenhouse gas produced per thousand cubic feet gas. </li>
+
+                </ol>
+                
+                <h2 class="heading-39291">Buildings and Industrial Dataset</h2>
+                <div><img src="images/do2.png" alt="Image" class="img-fluid"></div>
+                <p>For buildings and industrials data, there are two classifications: commercial buildings and industrials. These data are necessary for this project because the goal of this project is to obtain a detailed view of how energy consumption occurs in different Industry Classification System of North America. There are 18 attributes in both commercial buildings data and industrials data: </p>
+                <ol>
+                  <li>zip : the zip of the USA </li>
+                  <li>city: the city name of the USA </li>
+                  <li>housing_units: A housing unit is a house, an apartment, a group of rooms, or a single room occupied or intended for occupancy as separate living quarters. </li>
+                  <li>total_pop: total population of the city. </li>
+                  <li>commercial_num_establishments / industrial_num_establishments: the number of commercial establishments or industrial establishments. </li>
+                  <li>residential_elec_1kdollars / commercial_elec_1kdollars / industrial_elec_1kdollars: the expenditures of electricity, and the unit is 1k dollars. </li>
+                  <li>residential_elec_mwh / commercial_elec_mwh / industrial_elec_mwh: the usage of electricity, and the unit is megawatt hour. </li>
+                  <li>residential_gas_1kdollars / commercial_gas_1kdollars / industrial_gas_1kdollars: the expenditures of natural gas, and the unit is 1k dollars. </li>
+                  <li>residential_gas_mcf / commercial_gas_mcf / industrial_gas_mcf: the usage of natural gas, and the unit is 1 thousand cubic feet. </li>
+                  <li>1residential_elec_lb_ghg / commercial_elec_lb_ghg / industrial_elec_lb_ghg: the greenhouse gas produced per megawatt hour electricity. </li>
+                  <li>residential_gas_lb_ghg / commercial_gas_lb_ghg / industrial_gas_lb_ghg: the greenhouse gas produced per thousand cubic feet gas. </li>
+                  <li>rank_of_electricity_use_per_establishment: the rank of average electricity amount in this state </li>
+                  <li>natural_gas_users: Different kinds of business under NAICS 3 who use natural gas </li>
+                  <li>number_of_natural_gas_establishments: the number of business who uses natural gas </li>
+                  <li>natural_gas_use: the total used amount of natural gas </li>
+                  <li>rank_of_natural_gas_use: the rank of the use-natural-gas amount in this city </li>
+                  <li>natural_gas_use_per_establishment: the average natural gas amount </li>
+                  <li>rank_of_natural_gas_use_per_establishment: the rank of average natural gas amount in this state </li>
+                  
+                </ol>
+
+                <h2 class="heading-39291">Energy Usage and Expenditure Dataset</h2>
+                <div><img src="images/do3.png" alt="Image" class="img-fluid"></div>
+                <p>For energy usage and expenditure, this data set collects the annual consumption of electricity and gas in industrial, commercial and residential areas in various American cities, including the maximum, average and minimum energy consumption. These categories show the cities with the highest energy consumption and the factors accounting for the largest proportion of urban energy consumption. The main data attributes are: </p>
+                <ol>
+                  <li>zip : the zip of the USA </li>
+                  <li>city: the city name of the USA</li>
+                  <li>commercial_electric_use(min/avg/max): The minimize/average/maximum value of commercial electric usage </li>
+                  <li>commercial_electric_expenditure(min/avg/max): The minimize/average/maximum value of commercial electric expenditure </li>
+                  <li>commercial_gas_use(min/avg/max): The minimize/average/maximum value of commercial gas usage </li>
+                  <li>commercial_gas_expenditure(min/avg/max):The minimize/average/maximum value of commercial gas expenditure </li>
+                  <li>industrial_electric_use(min/avg/max): The minimize/average/maximum value of industrial electric usage </li>
+                  <li>industrial_electric_expenditure(min/avg/max): The minimize/average/maximum value of industrial electric expenditure </li>
+                  <li>industrial_gas_use(min/avg/max): The minimize/average/maximum value of industrial gas usage </li>
+                  <li>industrial_gas_expenditure(min/avg/max): The minimize/average/maximum value of industrial gas expenditure </li>
+                  <li>residential_electric_use(min/avg/max): The minimize/average/maximum value of residential electric usage </li>
+                  <li>residential_electric_expenditure(min/avg/max): The minimize/average/maximum value of residential electric expenditure </li>
+                  <li>residential_gas_use(min/avg/max): The minimize/average/maximum value of residential gas usage </li>
+                  <li>residential_gas_expenditure(min/avg/max): The minimize/average/maximum value of residential gas expenditure </li>
+                  <li>city_fuel_use_diesel(min/avg/max): The minimize/average/maximum value of city diesel usage </li>
+                  <li>city_fuel_use_gas(min/avg/max): The minimize/average/maximum value of city gas usage </li>
+                  
+                </ol>
+                
+                <h2 class="heading-39291">CO2 Emission Dataset </h2>
+                <p>For carbon dioxide emissions, the data collected carbon emissions by U.S. states from 1980 to 2016; These data can help to analyze the trend of carbon emissions, and can obtain the relationship between energy consumption and carbon emissions. The main data attributes are: </p>
+                <ol>
+                  <li>type: Resource type, such as industrial, commercial, residential, electric, transportation, total </li>
+                  <li>series_id: The identifier of the record </li>
+                  <li>name: The textual representation of the record </li>
+                  <li>Data from 1980 to 2016: The specific data of carbon dioxide emission from 1980 to 2016 </li>
+                  
+                </ol>
+
+                <p>Therefore, many statistical data can be gotten, such as the ranking of electricity expenditure per housing unit, electricity expenditure per capita, and greenhouse gas emissions. It is available to locate some cities where energy consumption is higher than others. There might be ought to strengthen measurements of saving energy. Besides, to predict the potential cities with high energy consumption and take measures to save energy is also meaningful. To predict, there should be more historic data to collect in different years to analyze the change tendency. </p>
+                <p>Besides, the error – “NOT FOUND” occurs when requesting json data using a zip code. Solution: detect the error code returned by the request, and save the data information in the csv files only when the errors are empty. </p>
+                <p>Sometimes, we cannot request json file. For some zip codes, it blocks or fails when I request the relevant json file. I set a conditional statement to ignore these special zip codes. </p>
+                
+    
+                 <p class="mb-0"><a href="export_csv.html" class="btn btn-primary rounded-0">Our Data</a></p>
+              
+          </div>
+        </div>
+
+
+
+    
+        <footer class="site-footer">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="row">
+                    <div class="col-md-7">
+                      <h2 class="footer-heading mb-4">COSC 587 Analysis Group</h2>
+                      <p>We The Best</p>
+                    </div>
+                    <div class="col-md-4 ml-auto">
+                      <h2 class="footer-heading mb-4">Features</h2>
+                      <ul class="list-unstyled">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                      </ul>
+                    </div>
+      
+                  </div>
+                </div>
+                <div class="col-md-4 ml-auto">
+      
+                  
+      
+      
+                  <h2 class="footer-heading mb-4">Follow Us</h2>
+                  
+                  <a href="#" class="pl-3 pr-3"><span class="icon-web"></span></a>
+                  <a href="#" class="pl-3 pr-3"><span class="icon-github"></span></a>
+                  <a href="#" class="pl-3 pr-3"><span class="icon-facebook"></span></a>
+                  <a href="#" class="pl-3 pr-3"><span class="icon-linkedin"></span></a>
+                  </form>
+                </div>
+              </div>
+              <div class="row pt-5 mt-5 text-center">
+                <div class="col-md-12">
+                  <div class="pt-5">
+                    <p class="small">
+                  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This website is designed by <a href="https://chenyang.georgetown.domains" target="_blank" >Yang Chen</a>
+                  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                  </p>
+                  </div>
+                </div>
+      
+              </div>
+            </div>
+          </footer>
+      
+          </div>
+      
+          <script src="js/jquery-3.3.1.min.js"></script>
+          <script src="js/popper.min.js"></script>
+          <script src="js/bootstrap.min.js"></script>
+          <script src="js/owl.carousel.min.js"></script>
+          <script src="js/jquery.sticky.js"></script>
+          <script src="js/jquery.waypoints.min.js"></script>
+          <script src="js/jquery.animateNumber.min.js"></script>
+          <script src="js/jquery.fancybox.min.js"></script>
+          <script src="js/jquery.easing.1.3.js"></script>
+          <script src="js/aos.js"></script>
+      
+          <script src="js/main.js"></script>
+      
+      
+        </body>
+      
+      </html>
+      
