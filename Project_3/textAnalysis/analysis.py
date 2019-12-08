@@ -1,8 +1,13 @@
+###################
+# Author: Dandan Wang
+# NetID: dw862
+# Function: topic modeling analysis.
+# #################
 from sklearn.feature_extraction.text import CountVectorizer
 import pandas as pd
 from sklearn.decomposition import LatentDirichletAllocation
 
-if __name__ == "__main__":
+def LDA():
     with open("text.txt", 'r') as f:
         lines = f.readlines()
         cv = CountVectorizer(stop_words = 'english')
@@ -16,4 +21,6 @@ if __name__ == "__main__":
             message += " ".join([feature_names[i] for i in topic.argsort()[:-n_top_words - 1:-1]])
             print(message)
 
+if __name__ == "__main__":
+    LDA()
 
